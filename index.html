@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Duguláselhárítás - Országos Gyorsszerviz</title>
+  <title>Duguláselhárítás 0-24 - Országos gyorsszerviz</title>
+  <meta name="description" content="Gyors és szakszerű duguláselhárítás az ország egész területén, 0-24 elérhetőséggel. 20+ év tapasztalat. Hívjon most!">
+  
   <style>
     body {
       margin: 0;
@@ -17,8 +19,7 @@
       background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('tools.webp') no-repeat center center/cover;
       color: white;
       text-align: center;
-      padding: 5em 1em 3em;
-      position: relative;
+      padding: 5em 1em;
     }
 
     header h1 {
@@ -32,27 +33,6 @@
       font-size: 1.2em;
       margin: 0;
       animation: fadeInUp 1s ease-out;
-    }
-
-    .language-switch {
-      position: absolute;
-      top: 1em;
-      right: 1em;
-    }
-
-    .language-switch button {
-      background: #00d4ff;
-      border: none;
-      color: white;
-      font-weight: bold;
-      padding: 0.5em 1em;
-      border-radius: 20px;
-      cursor: pointer;
-      transition: background-color 0.3s;
-    }
-
-    .language-switch button:hover {
-      background-color: #008ecf;
     }
 
     .buttons {
@@ -83,8 +63,8 @@
     .email-btn { background-color: #FF5722; }
 
     section {
-      padding: 5em 1em 3em;
-      max-width: 900px;
+      padding: 5em 1em;
+      max-width: 1200px;
       margin: auto;
     }
 
@@ -106,100 +86,56 @@
       border-radius: 2px;
     }
 
-    .intro p,
-    .disclaimer p {
+    .intro p {
+      text-align: center;
+      max-width: 850px;
+      margin: auto;
       font-size: 1.15em;
-      color: #34495e;
-      line-height: 1.6;
-      max-width: 700px;
-      margin: 0 auto;
-      animation: fadeIn 1s ease-in;
-      text-align: center;
-    }
-
-    /* ---- Szolgáltatások elrendezés: két oszlopos blokkok ---- */
-    .services-container {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 3em;
-      justify-content: center;
-      margin-top: 2em;
-    }
-
-    .service-block {
-      display: flex;
-      flex-wrap: nowrap;
-      gap: 2em;
-      width: 100%;
-      max-width: 860px;
-      border-radius: 12px;
-      background: white;
-      padding: 2em;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
       animation: fadeIn 1s ease-in;
     }
 
-    .images-col {
-      display: flex;
-      flex-direction: column;
-      gap: 1.5em;
-      flex: 1;
-      max-width: 45%;
-      justify-content: center;
-    }
-
-    .images-col img {
-      width: 100%;
-      border-radius: 12px;
-      object-fit: cover;
-      height: 150px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-      transition: transform 0.3s ease;
-    }
-    .images-col img:hover {
-      transform: scale(1.05);
-    }
-
-    .texts-col {
-      flex: 1;
-      max-width: 50%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      gap: 2em;
-      color: #34495e;
-    }
-
-    .texts-col h3 {
-      color: #00d4ff;
-      margin: 0;
-      font-size: 1.6rem;
-      font-weight: 700;
-      text-align: center;
-    }
-
-    .texts-col p {
-      margin-top: 0.3em;
-      font-size: 1.1em;
-      line-height: 1.5;
-      text-align: left;
-    }
-
-    /* ---- Kiszállási díj szakasz ---- */
-    .disclaimer {
-      background: #e1f5fe;
-      border-left: 6px solid #00d4ff;
-      border-radius: 8px;
-      padding: 1em 1.5em;
+    .services {
       margin-top: 3em;
-      color: #0d47a1;
       max-width: 900px;
       margin-left: auto;
       margin-right: auto;
+    }
+
+    .service-item {
+      margin-bottom: 3em;
+    }
+
+    .service-item h3 {
+      color: #00d4ff;
+      font-size: 1.8em;
+      margin-bottom: 0.4em;
       text-align: center;
+    }
+
+    .service-item p {
       font-size: 1.1em;
+      color: #444;
+      max-width: 700px;
+      margin: auto;
+      text-align: left;
       line-height: 1.5;
-      animation: fadeIn 1s ease-in;
+    }
+
+    .service-flex {
+      display: flex;
+      justify-content: center;
+      gap: 2em;
+      margin-top: 1em;
+      flex-wrap: wrap;
+    }
+
+    .service-flex img {
+      max-width: 300px;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      object-fit: cover;
+      height: 200px;
+      width: 300px;
     }
 
     footer {
@@ -226,135 +162,100 @@
     }
 
     @media (max-width: 900px) {
-      .service-block {
+      .service-flex {
         flex-direction: column;
-        padding: 1em;
+        align-items: center;
       }
-      .images-col, .texts-col {
-        max-width: 100%;
-        flex: none;
-      }
-      .images-col img {
-        height: 180px;
+
+      .service-flex img {
+        width: 90%;
+        height: auto;
       }
     }
 
-    @media (max-width: 480px) {
+    @media (max-width: 600px) {
       header h1 { font-size: 2em; }
       .buttons { flex-direction: column; }
-      .texts-col h3 {
-        font-size: 1.4rem;
-      }
     }
   </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Országos Duguláselhárítás",
+    "telephone": "+36206108743",
+    "url": "https://felhasznalonev.github.io/dugulaselharitas/",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "HU"
+    }
+  }
+  </script>
 </head>
 <body>
 
 <header>
-  <div class="language-switch">
-    <button id="langToggle">English</button>
-  </div>
-  <h1 id="title-hu">Országos Duguláselhárítás</h1>
-  <h1 id="title-en" style="display:none;">National Drain Clearing</h1>
-
-  <p id="subtitle-hu">Gyorsszerviz – 0-24 elérhetőség bárhol az országban</p>
-  <p id="subtitle-en" style="display:none;">Fast Service – Available 24/7 Anywhere in the Country</p>
-
+  <h1>Országos Duguláselhárítás</h1>
+  <p>Gyorsszerviz – 0-24 elérhetőség bárhol az országban</p>
   <div class="buttons">
-    <a href="tel:+36206108743" class="call-btn" id="call-hu">📞 Hívás: +36 20 610 8743</a>
-    <a href="tel:+36206108743" class="call-btn" id="call-en" style="display:none;">📞 Call: +36 20 610 8743</a>
-    <a href="mailto:newwave981820@gmail.com" class="email-btn" id="email-hu">✉️ E-mail: newwave981820@gmail.com</a>
-    <a href="mailto:newwave981820@gmail.com" class="email-btn" id="email-en" style="display:none;">✉️ Email: newwave981820@gmail.com</a>
+    <a href="tel:+36206108743" class="call-btn">📞 Hívás: +36 20 610 8743</a>
+    <a href="mailto:newwave981820@gmail.com" class="email-btn">✉️ E-mail: newwave981820@gmail.com</a>
   </div>
 </header>
 
 <section class="intro">
-  <h2 id="about-hu">Rólunk</h2>
-  <h2 id="about-en" style="display:none;">About Us</h2>
-  <p id="about-text-hu">20+ év tapasztalattal rendelkező vízszerelő csapatunk gyors és megbízható szolgáltatást nyújt otthonában, legyen szó duguláselhárításról, csőtörésről vagy felújításról. Országos lefedettség, profi szerszámok és 0-24 elérhetőség biztosítja, hogy problémája gyorsan megoldódjon.</p>
-  <p id="about-text-en" style="display:none;">With over 20 years of experience, our plumber team provides fast and reliable services at your home, whether it's drain clearing, pipe repair, or renovation. Nationwide coverage, professional tools, and 24/7 availability ensure your problem is resolved quickly.</p>
+  <h2>Rólunk</h2>
+  <p>20+ év tapasztalattal rendelkező vízszerelő csapatunk gyors és megbízható szolgáltatást nyújt otthonában, legyen szó duguláselhárításról, csőtörésről vagy felújításról. Országos lefedettség, profi szerszámok és 0-24 elérhetőség biztosítja, hogy problémája gyorsan megoldódjon.</p>
 </section>
 
 <section class="services">
-  <h2 id="services-hu">Szolgáltatásaink</h2>
-  <h2 id="services-en" style="display:none;">Our Services</h2>
+  <h2 style="text-align:center;">Szolgáltatásaink</h2>
 
-  <!-- Első két szolgáltatás blokk -->
-  <div class="service-block">
-    <div class="images-col">
-      <img src="plumbing-bathroom.jpg" alt="Fürdőszobai szerelés" />
-      <img src="kitchen-plumbing.jpg" alt="Konyhai vízszerelés" />
-    </div>
-    <div class="texts-col">
-      <div>
-        <h3 id="service1-hu">Fürdőszobai szerelés</h3>
-        <h3 id="service1-en" style="display:none;">Bathroom Plumbing</h3>
-        <p id="service1-text-hu">Duguláselhárítás kádnál, zuhanynál, WC-nél • Mosdó, csaptelep csere • Lefolyótisztítás • Szifoncsere • WC-tartály javítás</p>
-        <p id="service1-text-en" style="display:none;">Drain clearing for bathtubs, showers, toilets • Sink and faucet replacement • Drain cleaning • Siphon replacement • Toilet tank repair</p>
-      </div>
-      <div>
-        <h3 id="service2-hu">Konyhai vízszerelés</h3>
-        <h3 id="service2-en" style="display:none;">Kitchen Plumbing</h3>
-        <p id="service2-text-hu">Mosogató duguláselhárítás • Csaptelep csere • Konyhai csőtörés elhárítás • Szifon, lefolyó javítás • Szivárgás megszüntetés</p>
-        <p id="service2-text-en" style="display:none;">Sink drain clearing • Faucet replacement • Kitchen pipe repair • Siphon and drain repair • Leak elimination</p>
-      </div>
+  <div class="service-item">
+    <h3>Fürdőszobai szerelés</h3>
+    <div class="service-flex">
+      <img src="plumbing-bathroom.jpg" alt="Fürdőszobai duguláselhárítás, szifoncsere, csaptelep javítás" />
+      <p>Duguláselhárítás kádnál, zuhanynál, WC-nél • Mosdó, csaptelep csere • Lefolyótisztítás • Szifoncsere • WC-tartály javítás</p>
     </div>
   </div>
 
-  <!-- Második két szolgáltatás blokk -->
-  <div class="service-block">
-    <div class="images-col">
-      <img src="outdoor.jpg" alt="Kültéri dugulás, strang" />
-      <img src="bathroom.webp" alt="Víz- és fűtésszerelés" />
-    </div>
-    <div class="texts-col">
-      <div>
-        <h3 id="service3-hu">Kültéri dugulás, strang</h3>
-        <h3 id="service3-en" style="display:none;">Outdoor Drain Clearing & Mainline</h3>
-        <p id="service3-text-hu">Fővezeték duguláselhárítás • Udvari csatorna tisztítás • Gyökérbenövés eltávolítás • Átemelő szivattyú telepítés</p>
-        <p id="service3-text-en" style="display:none;">Main pipeline drain clearing • Yard drain cleaning • Root intrusion removal • Pump station installation</p>
-      </div>
-      <div>
-        <h3 id="service4-hu">Víz- és fűtésszerelés</h3>
-        <h3 id="service4-en" style="display:none;">Water and Heating Services</h3>
-        <p id="service4-text-hu">Radiátor csere • Vízóra bekötés • Bojler javítás, csere • Fűtéscsövek nyomáspróbája • Szerelvények javítása</p>
-        <p id="service4-text-en" style="display:none;">Radiator replacement • Water meter installation • Boiler repair and replacement • Heating pipe pressure testing • Fixture repairs</p>
-      </div>
+  <div class="service-item">
+    <h3>Konyhai vízszerelés</h3>
+    <div class="service-flex">
+      <img src="kitchen-plumbing.jpg" alt="Konyhai duguláselhárítás, csaptelep csere, szifon javítás" />
+      <p>Mosogató duguláselhárítás • Csaptelep csere • Konyhai csőtörés elhárítás • Szifon, lefolyó javítás • Szivárgás megszüntetés</p>
     </div>
   </div>
-</section>
 
-<section class="disclaimer">
-  <h2 id="disclaimer-title-hu">Kiszállási díj</h2>
-  <h2 id="disclaimer-title-en" style="display:none;">Service Call Fee</h2>
-  <p id="disclaimer-text-hu">
-    A telefonon megbeszélt időpontokra kiszállási díjat csak abban az esetben számolunk fel, ha a munkát nem tőlünk rendelik meg.<br>
-    A kiszállási díj mértéke a távolságtól függ, ezért a konkrét összeget az időpont véglegesítésekor kalkuláljuk és tájékoztatjuk a megrendelőt.<br>
-    A véglegesítés pillanatával a megrendelő elfogadja és vállalja ezen feltételeket.
-  </p>
-  <p id="disclaimer-text-en" style="display:none;">
-    A service call fee is charged only if the appointment agreed on the phone does not result in a service order from us.<br>
-    The fee depends on the distance, so the exact amount will be calculated and communicated when the appointment is finalized.<br>
-    By finalizing the appointment, the customer accepts and agrees to these terms.
-  </p>
+  <div class="service-item">
+    <h3>Kültéri dugulás, strang</h3>
+    <div class="service-flex">
+      <img src="outdoor.jpg" alt="Kültéri duguláselhárítás, fővezeték tisztítás, gyökérbenövés eltávolítás" />
+      <p>Fővezeték duguláselhárítás • Udvari csatorna tisztítás • Gyökérbenövés eltávolítás • Átemelő szivattyú telepítés</p>
+    </div>
+  </div>
+
+  <div class="service-item">
+    <h3>Víz- és fűtésszerelés</h3>
+    <div class="service-flex">
+      <img src="tools.webp" alt="Víz- és fűtésszerelés, radiátor csere, bojler javítás" />
+      <p>Radiátor csere • Vízóra bekötés • Bojler javítás, csere • Fűtéscsövek nyomáspróbája • Szerelvények javítása</p>
+    </div>
+  </div>
+
+  <section class="intro" style="margin-top:3em;">
+    <h2>Kiszállási díj</h2>
+    <p style="max-width:700px; margin:auto; font-size:1.1em; text-align:center;">
+      A telefonon megbeszélt időpontokra akkor számoljuk fel a kiszállási díjat, ha nem tőlünk kapják meg a munkát. A díj mértéke a távolságtól függ, így a konkrét összeget az időpont véglegesítésekor számoljuk ki és tájékoztatjuk a megrendelőt. A véglegesítéssel a megrendelő ezeket a feltételeket elfogadja és vállalja.
+    </p>
+  </section>
 </section>
 
 <footer>
-  &copy; 2025 Országos Duguláselhárítás | Minden jog fenntartva
+  &copy; 2025 Országos Duguláselhárítás. Minden jog fenntartva.
 </footer>
-
-<script>
-  const langToggle = document.getElementById('langToggle');
-  langToggle.addEventListener('click', () => {
-    const isHungarian = document.getElementById('title-hu').style.display !== 'none';
-    
-    // Toggle Hungarian/English elements
-    document.querySelectorAll('[id$="-hu"]').forEach(el => el.style.display = isHungarian ? 'none' : '');
-    document.querySelectorAll('[id$="-en"]').forEach(el => el.style.display = isHungarian ? '' : 'none');
-
-    langToggle.textContent = isHungarian ? 'Magyar' : 'English';
-  });
-</script>
 
 </body>
 </html>
+
