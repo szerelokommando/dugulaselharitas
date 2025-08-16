@@ -1,213 +1,85 @@
 <!DOCTYPE html>
 <html lang="hu">
-<head><!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17092436986"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-17092436986');
-</script>
-
+<head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Duguláselhárítás 0-24 Budapesten és Országosan | Cleanwater General Kft.</title>link rel="icon" type="image/x-icon" href="favicon.ico">
+<title>Duguláselhárítás 0-24 Budapesten és Országosan | Cleanwater General Kft.</title>
+<link rel="icon" type="image/x-icon" href="favicon.ico">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 <meta name="description" content="Gyors és szakszerű duguláselhárítás Budapesten és az ország egész területén, 0-24 elérhetőséggel. Vízvezeték szerelő több mint 20 év tapasztalattal. Budapesten és Pest megyén belül 60 percen belüli kiszállás. Hívjon most!">
 
 <style>
-body, html {
-  margin:0; padding:0;
-  font-family: Arial, sans-serif;
-  color:#333;
-  scroll-behavior: smooth;
-}
-header {
-  position: relative;
-  text-align: center;
-  color: white;
-  padding: 5em 1em;
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('tools.webp') no-repeat center center/cover;
-}
-header h1 {
-  font-size: 2.8em;
-  color:#00d4ff;
-  margin: 0.2em 0;
-  animation: fadeInDown 1s ease-out;
-}
-header p {
-  font-size:1.2em;
-  margin:0;
-  animation: fadeInUp 1s ease-out;
-}
-.buttons {
-  margin-top: 2em;
-  display:flex;
-  justify-content:center;
-  gap:1em;
-  flex-wrap: wrap;
-}
+body, html { margin:0; padding:0; font-family: Arial, sans-serif; color:#333; scroll-behavior: smooth; }
+header { position: relative; text-align: center; color: white; padding: 5em 1em;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('tools.webp') no-repeat center center/cover; }
+header h1 { font-size: 2.8em; color:#00d4ff; margin: 0.2em 0; animation: fadeInDown 1s ease-out; }
+header p { font-size:1.2em; margin:0; animation: fadeInUp 1s ease-out; }
+
+.buttons { margin-top: 2em; display:flex; justify-content:center; gap:1em; flex-wrap: wrap; }
 .buttons a {
-  text-decoration:none;
-  padding:1em 2em;
-  border-radius:10px;
-  font-weight:bold;
-  color:white;
-  transition: transform 0.3s, box-shadow 0.3s;
-  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
-  font-size:1.1em;
+  text-decoration:none; padding:1em 2em; border-radius:10px; font-weight:bold; color:white;
+  transition: transform 0.3s, box-shadow 0.3s; box-shadow: 0 6px 12px rgba(0,0,0,0.2); font-size:1.1em;
 }
-.buttons a:hover {
-  transform: translateY(-5px);
-  box-shadow:0 12px 20px rgba(0,0,0,0.35);
-}
+.buttons a:hover { transform: translateY(-5px); box-shadow:0 12px 20px rgba(0,0,0,0.35); }
 .call-btn { background-color: #28a745; }
 .email-btn { background-color: #FF5722; }
-nav {
-  position: sticky;
-  top:0;
-  background: rgba(0,0,0,0.7);
+
+/* FIXÁLT GOMBOK */
+.floating-buttons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
   display: flex;
-  justify-content: center;
-  gap: 1em;
-  padding:0.8em 0;
-  z-index: 10;
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 9999;
 }
-nav a {
+.floating-buttons a {
   text-decoration:none;
+  padding:0.8em 1.5em;
+  border-radius:50px;
+  font-weight:bold;
   color:white;
-  padding:0.5em 1em;
-  border-radius:8px;
-  transition: background 0.3s;
-}
-nav a:hover { background: rgba(0,0,0,0.9); }
-section {
-  padding:5em 1em;
-  max-width:1200px;
-  margin:auto;
-  position: relative;
-}
-section h2 {
-  color:#00d4ff;
-  margin-bottom:1em;
-  text-align:center;
-  font-size:2em;
-  position:relative;
-}
-section h2::after {
-  content:'';
-  display:block;
-  width:80px;
-  height:4px;
-  background:#00d4ff;
-  margin:0.5em auto 0;
-  border-radius:2px;
-}
-.intro p {
-  text-align:center;
-  max-width:850px;
-  margin:auto;
-  font-size:1.15em;
-  animation: fadeIn 1s ease-in;
-}
-.services .service-item {
-  margin-bottom:3em;
-  text-align:center;
-}
-.services .service-item h3 {
-  font-size:1.8em;
-  color:#00d4ff;
-  margin-bottom:0.5em;
-}
-.service-flex {
-  display:flex;
-  justify-content:center;
-  gap:2em;
-  flex-wrap:wrap;
-  margin-top:1em;
-}
-.service-flex img {
-  max-width:300px;
-  border-radius:12px;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
-  object-fit:cover;
-  height:200px;
-  width:300px;
-}
-.price-list {
-  display:grid;
-  grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
-  gap:20px;
-  text-align:center;
-}
-.price-item {
-  padding:20px;
-  border-radius:10px;
-  background-color:#fff;
-  box-shadow:0 6px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
   transition: transform 0.3s;
+  font-size:1em;
 }
-.price-item:hover {
-  transform: translateY(-5px);
-  box-shadow:0 12px 20px rgba(0,0,0,0.2);
-}
+.floating-buttons a:hover { transform: scale(1.05); }
+
+nav { position: sticky; top:0; background: rgba(0,0,0,0.7); display: flex; justify-content: center; gap: 1em;
+  padding:0.8em 0; z-index: 10; flex-wrap: wrap; }
+nav a { text-decoration:none; color:white; padding:0.5em 1em; border-radius:8px; transition: background 0.3s; }
+nav a:hover { background: rgba(0,0,0,0.9); }
+
+section { padding:5em 1em; max-width:1200px; margin:auto; position: relative; }
+section h2 { color:#00d4ff; margin-bottom:1em; text-align:center; font-size:2em; position:relative; }
+section h2::after { content:''; display:block; width:80px; height:4px; background:#00d4ff; margin:0.5em auto 0; border-radius:2px; }
+
+.intro p { text-align:center; max-width:850px; margin:auto; font-size:1.15em; animation: fadeIn 1s ease-in; }
+.services .service-item { margin-bottom:3em; text-align:center; }
+.services .service-item h3 { font-size:1.8em; color:#00d4ff; margin-bottom:0.5em; }
+.service-flex { display:flex; justify-content:center; gap:2em; flex-wrap:wrap; margin-top:1em; }
+.service-flex img { max-width:300px; border-radius:12px; box-shadow: 0 6px 15px rgba(0,0,0,0.1); object-fit:cover; height:200px; width:300px; }
+
+.price-list { display:grid; grid-template-columns: repeat(auto-fill,minmax(300px,1fr)); gap:20px; text-align:center; }
+.price-item { padding:20px; border-radius:10px; background-color:#fff; box-shadow:0 6px 15px rgba(0,0,0,0.1); transition: transform 0.3s; }
+.price-item:hover { transform: translateY(-5px); box-shadow:0 12px 20px rgba(0,0,0,0.2); }
 .price-item h3 { font-size:1.5em; color:#00d4ff; margin-bottom:0.5em; }
 .price-item p { font-size:1.1em; color:#444; margin:0.3em 0; }
 .price-item .price { font-size:1.5em; font-weight:bold; color:#00d4ff; }
-footer {
-  text-align:center;
-  padding:2em 1em;
-  background-color:#222;
-  color:#ccc;
-  font-size:0.9em;
-}
-.side-videos video {
-  position: fixed;
-  top: 0;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
-}
-.side-videos .left-video { left:0; width:12%; }
-.side-videos .right-video { right:0; width:12%; }
-@keyframes fadeInDown { from {opacity:0; transform:translateY(-20px);} to {opacity:1; transform:translateY(0);} }
-@keyframes fadeInUp { from {opacity:0; transform:translateY(20px);} to {opacity:1; transform:translateY(0);} }
-@keyframes fadeIn { from{opacity:0;} to{opacity:1;} }
-@media(max-width:900px){
-  .service-flex { flex-direction:column; align-items:center; }
-  .service-flex img { width:90%; height:auto; }
-  .side-videos video { display:none; }
-}
+
+footer { text-align:center; padding:2em 1em; background-color:#222; color:#ccc; font-size:0.9em; }
+
 @media(max-width:600px){
-  header h1 { font-size:2em; }
-  .buttons { flex-direction: column; }
+  .floating-buttons { right: 10px; bottom: 10px; }
+  .floating-buttons a { padding:0.6em 1.2em; font-size:0.9em; }
 }
 </style>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17092436986"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-17092436986');
-</script>
 </head>
 
 <body>
-
-<div class="side-videos">
-  <video class="left-video" autoplay muted loop playsinline>
-    <source src="video.mp4" type="video/mp4">
-  </video>
-  <video class="right-video" autoplay muted loop playsinline>
-    <source src="video2.mp4" type="video/mp4">
-  </video>
-</div>
 
 <header>
   <h1>Duguláselhárítás és vízvezeték szerelés 0-24 Budapesten és Országosan</h1>
@@ -222,6 +94,7 @@ footer {
   <a href="#rolunk">Rólunk</a>
   <a href="#szolgaltatasok">Szolgáltatások</a>
   <a href="#arlista">Árlista</a>
+  <a href="#kapcsolat">Kapcsolat</a>
 </nav>
 
 <section id="rolunk" class="intro">
@@ -268,7 +141,7 @@ footer {
       <p>Csatornák és vízvezetékek belső állapotának precíz ellenőrzése kamerával.</p>
     </div>
     <div class="service-item">
-      <img src="zoli logó.png" alt="Egyéb vízszerelési munkák">
+      <img src="zoli logo.png" alt="Egyéb vízszerelési munkák">
       <h3>Egyéb vízszerelési munkák</h3>
       <p>Minden egyéb lakásban vagy ipari létesítményben felmerülő vízszerelési feladat.</p>
     </div>
@@ -281,22 +154,22 @@ footer {
     <div class="price-item">
       <h3>Duguláselhárítás</h3>
       <p>WC, mosogató</p>
-      <div class="price">5990Ft-tól</div>
+      <div class="price">5990 Ft-tól</div>
     </div>
     <div class="price-item">
-      <h3>Wc duguláselhárítás</h3>
+      <h3>WC duguláselhárítás</h3>
       <p>Teljes rendszer</p>
-      <div class="price">9990Ft-tól</div>
+      <div class="price">9990 Ft-tól</div>
     </div>
     <div class="price-item">
       <h3>Vízvezeték szerelés</h3>
       <p>Csapok, csövek, vízóra</p>
-      <div class="price">12.000 Ft-tól</div>
+      <div class="price">12 000 Ft-tól</div>
     </div>
     <div class="price-item">
-      <h3>Fürdőszobai Duguláselhárítás</h3>
+      <h3>Fürdőszobai duguláselhárítás</h3>
       <p>Gyors és precíz</p>
-      <div class="price">9990Ft-tól</div>
+      <div class="price">9990 Ft-tól</div>
     </div>
     <div class="price-item">
       <h3>Csőgörényezés</h3>
@@ -316,16 +189,27 @@ footer {
   </div>
 </section>
 
+<section id="kapcsolat">
+  <h2>Kapcsolat</h2>
+  <p style="text-align:center; max-width:800px; margin:auto; font-size:1.15em;">
+    Vegye fel velünk a kapcsolatot az alábbi elérhetőségeken! Éjjel-nappal hívhat minket, vagy írjon e-mailt, és azonnal válaszolunk.
+  </p>
+  <div class="buttons" style="margin-top:2em;">
+    <a href="tel:+36304422112" class="call-btn">📞 Hívás: +36 30 44 22 112</a>
+    <a href="mailto:laci.cleanwater@gmail.com" class="email-btn">✉️ E-mail: laci.cleanwater@gmail.com</a>
+  </div>
+</section>
+
 <footer>
   &copy; 2025 Cleanwater General Kft. | Duguláselhárítás és vízvezeték szerelés 0-24
 </footer>
 
+<!-- Fixen megjelenő gombok -->
+<div class="floating-buttons">
+  <a href="tel:+36304422112" class="call-btn">📞 Hívás</a>
+  <a href="mailto:laci.cleanwater@gmail.com" class="email-btn">✉️ E-mail</a>
+</div>
+
 </body>
 </html>
-
-
-
-
-
-
 
