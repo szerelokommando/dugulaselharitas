@@ -56,6 +56,26 @@
     "sameAs": []
   }
   </script>
+
+  <!-- Google tag (gtag.js) - Google Ads -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17092436986"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-17092436986');
+
+    // Konverziókövető függvények
+    function hivasKonverzio() {
+      gtag('event', 'conversion', { 'send_to': 'AW-17092436986/telefon' });
+    }
+    function emailKonverzio() {
+      gtag('event', 'conversion', { 'send_to': 'AW-17092436986/email' });
+    }
+  </script>
+
+<style>
+
 <style>
 body, html { margin:0; padding:0; font-family: Arial, sans-serif; color:#333; scroll-behavior: smooth; }
 header { position: relative; text-align: center; color: white; padding: 5em 1em;
@@ -261,4 +281,5 @@ footer { text-align:center; padding:2em 1em; background-color:#222; color:#ccc; 
 
 </body>
 </html>
+
 
