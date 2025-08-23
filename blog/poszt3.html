@@ -1,56 +1,46 @@
+
 <!DOCTYPE html>
 <html lang="hu">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DugulásBlog - A konyhai kaland</title>
+<title>Mosogató-mese</title>
 <style>
+/* ugyanaz a stílus mint az előző */
 body, html { margin:0; padding:0; font-family: Arial, sans-serif; color:#333; scroll-behavior: smooth; }
-header { position: relative; text-align: center; color: white; padding: 5em 1em;
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('tools.webp') no-repeat center center/cover; }
+header { position: relative; text-align: center; color: white; padding: 5em 1em; background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('tools.webp') no-repeat center center/cover; }
 header h1 { font-size: 2.8em; color:#00d4ff; margin: 0.2em 0; }
 header p { font-size:1.2em; margin:0; }
-
-nav { position: sticky; top:0; background: rgba(0,0,0,0.7); display: flex; justify-content: center; gap: 1em;
-  padding:0.8em 0; z-index: 10; flex-wrap: wrap; }
-nav a { text-decoration:none; color:white; padding:0.5em 1em; border-radius:8px; transition: background 0.3s; }
-nav a:hover { background: rgba(0,0,0,0.9); }
-
-section { padding:5em 1em; max-width:1200px; margin:auto; position: relative; }
-section h2 { color:#00d4ff; margin-bottom:1em; text-align:center; font-size:2em; position:relative; }
-section h2::after { content:''; display:block; width:80px; height:4px; background:#00d4ff; margin:0.5em auto 0; border-radius:2px; }
-
-.blog-post p { text-align:justify; max-width:850px; margin:auto; font-size:1.15em; line-height:1.6; }
-
+.main-nav { position: sticky; top: 0; background: rgba(0,0,0,0.85); z-index: 1000; }
+.main-nav ul { list-style: none; margin: 0; padding: 0.8em 0; display: flex; justify-content: center; gap: 1em; flex-wrap: wrap; }
+.main-nav ul li a { text-decoration: none; color: white; padding: 0.5em 1em; border-radius: 8px; transition: background 0.3s; }
+.main-nav ul li a:hover { background: rgba(0,0,0,0.95); }
+section.blog-content { padding: 3em 1em; max-width: 900px; margin:auto; }
+section.blog-content h2 { color:#00d4ff; text-align:center; margin-bottom:1em; }
+section.blog-content p { font-size:1.1em; line-height:1.6em; margin-bottom:1em; }
 footer { text-align:center; padding:2em 1em; background-color:#222; color:#ccc; font-size:0.9em; }
-
-@media(max-width:600px){
-  nav { flex-direction: column; }
-}
 </style>
 </head>
 <body>
-
 <header>
-  <h1>DugulásBlog</h1>
-  <p>Humoros tippek a mindennapi dugulásokhoz</p>
+  <h1>Duguláselhárítás a hétköznapokban</h1>
+  <p>Vicces történetek és tippek, hogy a cső ne legyen gond</p>
 </header>
-
-<nav>
-  <a href="../index.html">Főoldal</a>
-  <a href="poszt3.html">Blog</a>
+<nav class="main-nav">
+  <ul>
+    <li><a href="../index.html">Főoldal</a></li>
+    <li><a href="poszt1.html">A konyhai kaland</a></li>
+    <li><a href="poszt2.html">A fürdőszoba titkos élete</a></li>
+    <li><a href="poszt3.html">Mosogató-mese</a></li>
+    <li><a href="poszt4.html">A csatorna rejtélye</a></li>
+  </ul>
 </nav>
-
-<section class="blog-post">
-  <h2>A konyhai kaland</h2>
-  <p>Egyszer a konyhában úgy döntöttem, hogy én leszek a „saját vízvezeték-szuperhősöm”. Az eldugult mosogató szinte nevetett rajtam, miközben én próbáltam minden eszközzel megoldani a problémát.</p>
-  <p>Fogtam a pumpát, forgattam, csavarogtam, és már kezdtem azt hinni, hogy ez a dugulás valójában az új házi kedvencem. A végén persze a profi jött, és minden visszazökkent a normális kerékvágásba.</p>
-  <p>Mindenesetre a történetből megtanultam: néha a legviccesebb kalandok ott kezdődnek, ahol a konyha és a dugulás találkozik!</p>
+<section class="blog-content">
+  <h2>Mosogató-mese</h2>
+  <p>Ki gondolta volna, hogy a mosogató alatt egy egész mese rejtőzik? A vízcseppek táncolnak, az edények sorban állnak, és a cső néha megtréfál minket. De minden mese tanulsággal jár: egy kis humor, és a mosogatás is élvezhető!</p>
 </section>
-
 <footer>
-  &copy; 2025 DugulásBlog | Minden jog fenntartva
+  &copy; 2025 Dugulásmester Blog
 </footer>
-
 </body>
 </html>
