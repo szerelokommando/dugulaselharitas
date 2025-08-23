@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DugulásBlog - Humor és tippek</title>
+<style>
+body, html { margin:0; padding:0; font-family: Arial, sans-serif; color:#333; scroll-behavior: smooth; }
+header { position: relative; text-align: center; color: white; padding: 5em 1em;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('tools.webp') no-repeat center center/cover; }
+header h1 { font-size: 2.8em; color:#00d4ff; margin: 0.2em 0; animation: fadeInDown 1s ease-out; }
+header p { font-size:1.2em; margin:0; animation: fadeInUp 1s ease-out; }
+
+.buttons { margin-top: 2em; display:flex; justify-content:center; gap:1em; flex-wrap: wrap; }
+.buttons a { text-decoration:none; padding:1em 2em; border-radius:10px; font-weight:bold; color:white;
+  transition: transform 0.3s, box-shadow 0.3s; box-shadow: 0 6px 12px rgba(0,0,0,0.2); font-size:1.1em; }
+.buttons a:hover { transform: translateY(-5px); box-shadow:0 12px 20px rgba(0,0,0,0.35); }
+.call-btn { background-color: #28a745; }
+.email-btn { background-color: #FF5722; }
+
+nav { position: sticky; top:0; background: rgba(0,0,0,0.7); display: flex; justify-content: center; gap: 1em;
+  padding:0.8em 0; z-index: 10; flex-wrap: wrap; }
+nav a { text-decoration:none; color:white; padding:0.5em 1em; border-radius:8px; transition: background 0.3s; }
+nav a:hover { background: rgba(0,0,0,0.9); }
+
+section { padding:5em 1em; max-width:1200px; margin:auto; position: relative; }
+section h2 { color:#00d4ff; margin-bottom:1em; text-align:center; font-size:2em; position:relative; }
+section h2::after { content:''; display:block; width:80px; height:4px; background:#00d4ff; margin:0.5em auto 0; border-radius:2px; }
+
+.blog-post p { text-align:justify; max-width:850px; margin:auto; font-size:1.15em; line-height:1.6; }
+
+footer { text-align:center; padding:2em 1em; background-color:#222; color:#ccc; font-size:0.9em; }
+
+@media(max-width:600px){
+  .buttons { flex-direction: column; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>DugulásBlog</h1>
+  <p>Humoros tippek a mindennapi dugulásokhoz</p>
+</header>
+
+<nav>
+  <a href="../index.html">Főoldal</a>
+  <a href="poszt1.html">Blog</a>
+</nav>
+
+<section class="blog-post">
+  <h2>Az első kalandom a dugulással</h2>
+  <p>Mindenkinek megvan az első élménye, amikor a konyhában a lefolyó egyszer csak megtagadta a szolgálatot. Nos, az én történetem sem különbözött a többiekétől…</p>
+  <p>Egyszerűen azt hittem, hogy egy kis szappanmaradvány okozza a problémát. De amikor elkezdtem a csövekbe nézni, rájöttem, hogy a helyzet sokkal komolyabb. Itt jön képbe a humor: próbáltam „beszélni” a lefolyóval, mint egy régi baráttal, hátha meggondolja magát.</p>
+  <p>Aztán persze jött a duguláselhárító mester, aki már a szemével is megoldotta, amit én órákig próbáltam kinyomozni. Tanulság? Néha a szakértelem kombinálva a jókedvvel a legjobb recept a stresszmentes otthonhoz.</p>
+</section>
+
+<footer>
+  &copy; 2025 DugulásBlog | Minden jog fenntartva
+</footer>
+
+</body>
+</html>
