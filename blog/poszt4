@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DugulásBlog - A fürdőszoba titkos élete</title>
+<style>
+body, html { margin:0; padding:0; font-family: Arial, sans-serif; color:#333; scroll-behavior: smooth; }
+header { position: relative; text-align: center; color: white; padding: 5em 1em;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('tools.webp') no-repeat center center/cover; }
+header h1 { font-size: 2.8em; color:#00d4ff; margin: 0.2em 0; }
+header p { font-size:1.2em; margin:0; }
+
+nav { position: sticky; top:0; background: rgba(0,0,0,0.7); display: flex; justify-content: center; gap: 1em;
+  padding:0.8em 0; z-index: 10; flex-wrap: wrap; }
+nav a { text-decoration:none; color:white; padding:0.5em 1em; border-radius:8px; transition: background 0.3s; }
+nav a:hover { background: rgba(0,0,0,0.9); }
+
+section { padding:5em 1em; max-width:1200px; margin:auto; position: relative; }
+section h2 { color:#00d4ff; margin-bottom:1em; text-align:center; font-size:2em; position:relative; }
+section h2::after { content:''; display:block; width:80px; height:4px; background:#00d4ff; margin:0.5em auto 0; border-radius:2px; }
+
+.blog-post p { text-align:justify; max-width:850px; margin:auto; font-size:1.15em; line-height:1.6; }
+
+footer { text-align:center; padding:2em 1em; background-color:#222; color:#ccc; font-size:0.9em; }
+
+@media(max-width:600px){
+  nav { flex-direction: column; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>DugulásBlog</h1>
+  <p>Humoros tippek a mindennapi dugulásokhoz</p>
+</header>
+
+<nav>
+  <a href="../index.html">Főoldal</a>
+  <a href="poszt4.html">Blog</a>
+</nav>
+
+<section class="blog-post">
+  <h2>A fürdőszoba titkos élete</h2>
+  <p>Elgondolkodtató, milyen titkokat rejthet a fürdőszoba, ha eldugul. Egyszer, amikor a kádat próbáltam megtisztítani, úgy éreztem, mintha a csövek titokban mesélnének egymásnak a víz útjáról.</p>
+  <p>A szappanmaradványok és hajszálak lázadásba kezdtek, én pedig próbáltam megőrizni a hidegvérem, miközben minden próbálkozás újabb humoros helyzetet szült. A profi duguláselhárító természetesen pillanatok alatt „lecsendesítette a lázadó csöveket”.</p>
+  <p>Tanulság? Néha a legjobb történetek ott születnek, ahol a csövek és a víz találkozik. És mindig legyen kéznél a humor – és egy profi szakember!</p>
+</section>
+
+<footer>
+  &copy; 2025 DugulásBlog | Minden jog fenntartva
+</footer>
+
+</body>
+</html>
