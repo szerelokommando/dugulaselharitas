@@ -3,72 +3,41 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Blog - Duguláselhárítás</title>
+<title>Dugulásmester Blog</title>
 <style>
-/* Ide jön a teljes style */
-body, html { margin:0; padding:0; font-family: Arial, sans-serif; color:#333; scroll-behavior: smooth; }
-header { position: relative; text-align: center; color: white; padding: 5em 1em; background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('tools.webp') no-repeat center center/cover; }
-header h1 { font-size: 2.8em; color:#00d4ff; margin: 0.2em 0; }
-header p { font-size:1.2em; margin:0; }
-nav { position: sticky; top:0; background: rgba(0,0,0,0.7); display: flex; justify-content: center; gap: 1em; padding:0.8em 0; z-index: 10; flex-wrap: wrap; }
-nav a { text-decoration:none; color:white; padding:0.5em 1em; border-radius:8px; transition: background 0.3s; }
-nav a:hover { background: rgba(0,0,0,0.9); }
-section { padding:5em 1em; max-width:1200px; margin:auto; position: relative; }
-section h2 { color:#00d4ff; margin-bottom:1em; text-align:center; font-size:2em; position:relative; }
-section h2::after { content:''; display:block; width:80px; height:4px; background:#00d4ff; margin:0.5em auto 0; border-radius:2px; }
-.price-list { display:grid; grid-template-columns: repeat(auto-fill,minmax(300px,1fr)); gap:20px; text-align:center; }
-.price-item { padding:20px; border-radius:10px; background-color:#fff; box-shadow:0 6px 15px rgba(0,0,0,0.1); transition: transform 0.3s; }
-.price-item:hover { transform: translateY(-5px); box-shadow:0 12px 20px rgba(0,0,0,0.2); }
-.price-item h3 { font-size:1.5em; color:#00d4ff; margin-bottom:0.5em; }
-.price-item p { font-size:1.1em; color:#444; margin:0.3em 0; }
-.price-item a { display:inline-block; margin-top:0.5em; padding:0.5em 1em; border-radius:8px; background:#28a745; color:white; text-decoration:none; transition:0.3s; }
-.price-item a:hover { background:#1e7e34; }
+body, html { margin:0; padding:0; font-family: Arial, sans-serif; background-color:#f5f5f5; color:#333; scroll-behavior: smooth; }
+header { text-align: center; padding: 4em 1em; background: linear-gradient(135deg, #00d4ff, #0055ff); color: white; }
+header h1 { margin: 0.2em 0; font-size: 2.8em; }
+header p { font-size: 1.2em; margin: 0; }
+section { max-width: 900px; margin: auto; padding: 3em 1em; }
+section h2 { text-align: center; color:#0055ff; margin-bottom: 2em; }
+ul.post-list { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 1.2em; }
+ul.post-list li { background: white; padding: 1.5em; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: transform 0.3s; }
+ul.post-list li:hover { transform: translateY(-5px); }
+ul.post-list li a { text-decoration: none; color: #0055ff; font-weight: bold; font-size: 1.3em; }
 footer { text-align:center; padding:2em 1em; background-color:#222; color:#ccc; font-size:0.9em; }
 </style>
 </head>
 <body>
 
 <header>
-  <h1>Duguláselhárítás Blog</h1>
-  <p>Tippek, trükkök és érdekességek a mindennapi dugulások megoldásához</p>
+  <h1>Dugulásmester Blog</h1>
+  <p>Vicces és szellemes történetek a hétköznapi dugulásokról</p>
 </header>
 
-<nav>
-  <a href="../index.html">Főoldal</a>
-  <a href="index.html">Blog</a>
-  <a href="../services.html">Szolgáltatások</a>
-  <a href="../contact.html">Kapcsolat</a>
-</nav>
-
-<section class="intro">
-  <h2>Legfrissebb cikkek</h2>
-  <div class="price-list" id="blog-cards">
-    <!-- Blogcikkek ide töltődnek JS által -->
-  </div>
+<section>
+  <h2>Legújabb bejegyzések</h2>
+  <ul class="post-list">
+    <li><a href="poszt1.html">A konyhai kaland</a></li>
+    <li><a href="poszt2.html">A fürdőszoba titkos élete</a></li>
+    <li><a href="poszt3.html">Mosogató-mese</a></li>
+    <li><a href="poszt4.html">A csatorna rejtélye</a></li>
+  </ul>
 </section>
 
 <footer>
-  &copy; 2025 Duguláselhárítás. Minden jog fenntartva.
+  &copy; 2025 Dugulásmester Blog
 </footer>
-
-<script>
-// 📝 Itt adod meg a cikkeket egyszerűen
-const blogArticles = [
-  { title: "Hogyan akadályozd meg a konyhai dugulást?", text: "Egyszerű hétköznapi tippek, hogy elkerüld a kellemetlen dugulásokat.", link: "cikk1.html" },
-  { title: "Fürdőszoba csaptelep karbantartás", text: "Tippek, hogy a fürdőszobai csövek hosszabb ideig működjenek probléma nélkül.", link: "cikk2.html" },
-  { title: "Mit ne önts a lefolyóba?", text: "A leggyakoribb hibák, amik dugulást okoznak – és hogyan kerülheted el őket.", link: "cikk3.html" },
-  { title: "Otthoni duguláselhárító trükkök", text: "Hasznos tippek, ha hirtelen eldugul a lefolyó, és nem jön a szerelő azonnal.", link: "cikk4.html" }
-];
-
-// 🖥️ Generáljuk a kártyákat
-const container = document.getElementById("blog-cards");
-blogArticles.forEach(article => {
-  const card = document.createElement("div");
-  card.className = "price-item";
-  card.innerHTML = `<h3>${article.title}</h3><p>${article.text}</p><a href="${article.link}">Olvasd tovább</a>`;
-  container.appendChild(card);
-});
-</script>
 
 </body>
 </html>
