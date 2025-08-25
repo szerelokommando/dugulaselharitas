@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Főoldal -->
+  <url>
+    <loc>https://www.gyors-dugulaselharitas.hu/</loc>
+    <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <!-- Fő menüpontok -->
+  <url><loc>https://www.gyors-dugulaselharitas.hu/index.html#rolunk</loc></url>
+  <url><loc>https://www.gyors-dugulaselharitas.hu/index.html#szolgaltatasok</loc></url>
+  <url><loc>https://www.gyors-dugulaselharitas.hu/index.html#arlista</loc></url>
+  <url><loc>https://www.gyors-dugulaselharitas.hu/index.html#kapcsolat</loc></url>
+  <url><loc>https://www.gyors-dugulaselharitas.hu/blog/index.html</loc></url>
+
+  <!-- Kerületek -->
+  <url><loc>https://www.gyors-dugulaselharitas.hu/budapest-i-kerulet.html</loc></url>
+  <url><loc>https://www.gyors-dugulaselharitas.hu/budapest-ii-kerulet.html</loc></url>
+  <url><loc>https://www.gyors-dugulaselharitas.hu/budapest-iii-kerulet.html</loc></url>
+  <url><loc>https://www.gyors-dugulaselharitas.hu/budapest-iv-kerulet.html</loc></url>
+  <url><loc>https://www.gyors-dugulaselharitas.hu/budapest-v-kerulet.html</loc></url>
+  <url><loc>https://www.gyors-dugulaselharitas.hu/budapest-vi-kerulet.html</loc></url>
+  <url><loc>https://www.gyors-dugulaselharitas.hu/budapest-vii-kerulet.html</loc></url>
+  <url><loc>https://www.gyors-dugulaselharitas.hu/budapest-viii-kerulet.html</loc></url>
+  <url><loc>https://www.gyors-dugulaselharitas.hu/budapest-ix-kerulet.html</loc></url>
+  <url><loc>https://www.gyors-dugulaselharitas.hu/budapest-x-kerulet.html</loc></url>
+  <url><loc>https://www.gyors-dugulaselharitas.hu/budapest-xi-kerulet.html</loc></url>
+  <url><loc>https://www.gyors-dugulaselharitas.hu/budapest-xii-kerulet.html</loc></url>
+  <url><loc>https://www.gyors-dugulaselharitas.hu/budapest-xiii-kerulet.html</loc></url>
+  <url><loc>https://www.gyors-dugulaselharitas.hu/budapest-xiv-kerulet.html</loc></url>
+  <url><loc>https://www.gyors-dugulaselharitas.hu/budapest-xv-kerulet.html</loc></url>
+  <url><loc>https://www.gyors-dugulaselharitas.hu/budapest-xvi-kerulet.html</loc></url>
+  <url><loc>https://www.gyors-dugulaselharitas.hu/budapest-xvii-kerulet.html</loc></url>
+  <url><loc>https://www.gyors-dugulaselharitas.hu/budapest-xviii-kerulet.html</loc></url>
+  <url><loc>https://www.gyors-dugulaselharitas.hu/budapest-xix-kerulet.html</loc></url>
+  <url><loc>https://www.gyors-dugulaselharitas.hu/budapest-xx-kerulet.html</loc></url>
+  <url><loc>https://www.gyors-dugulaselharitas.hu/budapest-xxi-kerulet.html</loc></url>
+  <url><loc>https://www.gyors-dugulaselharitas.hu/budapest-xxii-kerulet.html</loc></url>
+  <url><loc>https://www.gyors-dugulaselharitas.hu/budapest-xxiii-kerulet.html</loc></url>
+
+</urlset>
