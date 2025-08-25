@@ -21,21 +21,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Duguláselhárítás 0‑24 Budapesten és Országosan | Cleanwater General Kft.</title>
+  <!-- Rövidebb, fókuszált Title -->
+  <title>Duguláselhárítás 0-24 Budapesten | Cleanwater General</title>
   
   <!-- Meta SEO -->
-  <meta name="description" content="Gyors és szakszerű duguláselhárítás Budapesten és az ország egész területén, 0‑24 elérhetőséggel. Vízvezeték szerelő több mint 20 év tapasztalattal. Budapesten és Pest megyén belül 60 percen belüli kiszállás. Hívjon most!">
+  <meta name="description" content="Sürgős duguláselhárítás Budapesten 0-24. 60 perc alatt kiszállás, fix árak, garancia. Hívjon most a Cleanwater General Kft.-t!">
   <meta name="robots" content="index, follow">
-  <meta name="author" content="Cleanwater General Kft.">
-  <meta name="keywords" content="duguláselhárítás, vízvezeték szerelés, 0‑24 dugulás, gyorsszerviz, csatorna tisztítás, kamerás vizsgálat, vízóra csere, csőgörényezés, Budapest, Pest megye">
   <link rel="canonical" href="https://gyors-dugulaselharitas.hu">
 
-  <!-- Open Graph / Social Share -->
-  <meta property="og:title" content="Duguláselhárítás 0‑24 Budapesten és Országosan | Cleanwater General Kft.">
-  <meta property="og:description" content="Gyors és szakszerű duguláselhárítás Budapesten és országosan. Hívjon most!">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Duguláselhárítás 0-24 Budapesten | Cleanwater General">
+  <meta property="og:description" content="Gyors és szakszerű duguláselhárítás Budapesten. Hívjon most, 60 percen belül kiszállás!">
   <meta property="og:image" content="https://gyors-dugulaselharitas.hu/tools.webp">
   <meta property="og:url" content="https://gyors-dugulaselharitas.hu">
   <meta property="og:type" content="website">
+
+  <!-- Twitter card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Duguláselhárítás 0-24 Budapesten | Cleanwater General">
+  <meta name="twitter:description" content="Gyors duguláselhárítás Budapesten 0-24. Fix árak, garancia, 60 perc alatt kiszállás. Hívjon most!">
+  <meta name="twitter:image" content="https://gyors-dugulaselharitas.hu/tools.webp">
 
   <!-- Faviconok -->
   <link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -43,24 +48,29 @@
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 
-  <!-- Strukturált adat (JSON-LD) -->
+  <!-- Strukturált adat (JSON-LD) pontosítva -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": "Plumber",
     "name": "Cleanwater General Kft.",
-    "description": "Duguláselhárítás 0‑24 Budapesten és Országosan. Vízvezeték szerelés több mint 20 év tapasztalattal.",
+    "description": "Duguláselhárítás és vízvezeték szerelés 0-24 Budapesten és országosan. 20+ év tapasztalat.",
     "url": "https://gyors-dugulaselharitas.hu",
     "telephone": "+36304422112",
     "email": "laci.cleanwater@gmail.com",
     "address": {
       "@type": "PostalAddress",
       "addressCountry": "HU",
-      "addressLocality": "Budapest"
+      "addressLocality": "Budapest",
+      "postalCode": "1111",
+      "streetAddress": "Minta utca 1."
     },
-    "openingHours": "Mo‑Su 00:00‑23:59",
+    "openingHours": "Mo-Su 00:00-23:59",
     "image": "https://gyors-dugulaselharitas.hu/tools.webp",
-    "sameAs": []
+    "sameAs": [
+      "https://www.facebook.com/gyorsdugulas",
+      "https://maps.google.com/?cid=123456789"
+    ]
   }
   </script>
 
@@ -72,14 +82,23 @@
     gtag('js', new Date());
     gtag('config', 'AW-17092436986');
 
-    // Konverziókövető függvények
     function hivasKonverzio() {
       gtag('event', 'conversion', { 'send_to': 'AW-17092436986/telefon' });
     }
     function emailKonverzio() {
       gtag('event', 'conversion', { 'send_to': 'AW-17092436986/email' });
     }
+
+    // GA4 call_click esemény
+    document.addEventListener("DOMContentLoaded", function() {
+      document.querySelectorAll('a[href^="tel:"]').forEach(el=>{
+        el.addEventListener('click', ()=> gtag('event','call_click',{event_category:'CTA'}));
+      });
+    });
   </script>
+
+  <!-- Hero kép preload -->
+  <link rel="preload" as="image" href="tools.webp">
 
 <style>
 body, html { margin:0; padding:0; font-family: Arial, sans-serif; color:#333; scroll-behavior: smooth; }
@@ -152,8 +171,11 @@ footer { text-align:center; padding:2em 1em; background-color:#222; color:#ccc; 
 <body>
 
 <header>
-  <h1>Duguláselhárítás és vízvezeték szerelés 0-24 Budapesten és Országosan</h1>
-  <p>Gyorsszerviz – 0-24 elérhetőség bárhol az országban. Budapesten és Pest megyén belül 60 percen belüli kiszállás biztosított!</p>
+  <h1>Duguláselhárítás és vízvezeték szerelés 0-24 Budapesten</h1>
+  <p>Gyors duguláselhárítás bárhol Budapesten és országosan. Budapesten és Pest megyében 60 percen belüli kiszállás!</p>
+  <p style="font-weight:bold; color:#00d4ff; margin-top:1em;">
+    ✅ Most elérhető – átlagos kiszállás 60 percen belül Budapesten!
+  </p>
   <div class="buttons">
     <a href="tel:+36304422112" class="call-btn">📞 Hívás: +36 30 44 22 112</a>
     <a href="mailto:laci.cleanwater@gmail.com" class="email-btn">✉️ E-mail: laci.cleanwater@gmail.com</a>
@@ -166,59 +188,170 @@ footer { text-align:center; padding:2em 1em; background-color:#222; color:#ccc; 
   <a href="#arlista">Árlista</a>
   <a href="#kapcsolat">Kapcsolat</a>
   <a href="blog/index.html">Blog</a>
+
+  <!-- Kerületek legördülő -->
+  <div class="dropdown">
+    <button class="dropbtn">Kerületek ▼</button>
+    <div class="dropdown-content">
+      <a href="budapest-i-kerulet.html">I. kerület</a>
+      <a href="budapest-ii-kerulet.html">II. kerület</a>
+      <a href="budapest-iii-kerulet.html">III. kerület</a>
+      <a href="budapest-iv-kerulet.html">IV. kerület</a>
+      <a href="budapest-v-kerulet.html">V. kerület</a>
+      <a href="budapest-vi-kerulet.html">VI. kerület</a>
+      <a href="budapest-vii-kerulet.html">VII. kerület</a>
+      <a href="budapest-viii-kerulet.html">VIII. kerület</a>
+      <a href="budapest-ix-kerulet.html">IX. kerület</a>
+      <a href="budapest-x-kerulet.html">X. kerület</a>
+      <a href="budapest-xi-kerulet.html">XI. kerület</a>
+      <a href="budapest-xii-kerulet.html">XII. kerület</a>
+      <a href="budapest-xiii-kerulet.html">XIII. kerület</a>
+      <a href="budapest-xiv-kerulet.html">XIV. kerület</a>
+      <a href="budapest-xv-kerulet.html">XV. kerület</a>
+      <a href="budapest-xvi-kerulet.html">XVI. kerület</a>
+      <a href="budapest-xvii-kerulet.html">XVII. kerület</a>
+      <a href="budapest-xviii-kerulet.html">XVIII. kerület</a>
+      <a href="budapest-xix-kerulet.html">XIX. kerület</a>
+      <a href="budapest-xx-kerulet.html">XX. kerület</a>
+      <a href="budapest-xxi-kerulet.html">XXI. kerület</a>
+      <a href="budapest-xxii-kerulet.html">XXII. kerület</a>
+      <a href="budapest-xxiii-kerulet.html">XXIII. kerület</a>
+    </div>
+  </div>
 </nav>
+
+<style>
+nav {
+  display: flex;
+  gap: 20px;
+  background: #333;
+  padding: 10px;
+}
+
+nav a, .dropbtn {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font: inherit;
+}
+
+nav a:hover, .dropbtn:hover {
+  background: #555;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  flex-direction: column;
+  background: #444;
+  max-height: 200px; /* kb. 6 elem látszik */
+  overflow-y: auto; /* görgethető */
+  width: 180px;
+  z-index: 1000;
+}
+
+.dropdown-content a {
+  padding: 8px 12px;
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background: #666;
+}
+
+/* Scrollbar stílus (szebb, mint a default) */
+.dropdown-content::-webkit-scrollbar {
+  width: 8px;
+}
+.dropdown-content::-webkit-scrollbar-track {
+  background: #333;
+}
+.dropdown-content::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+.dropdown-content::-webkit-scrollbar-thumb:hover {
+  background: #aaa;
+}
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const btn = document.querySelector(".dropbtn");
+  const dropdown = document.querySelector(".dropdown-content");
+
+  btn.addEventListener("click", function(e) {
+    e.stopPropagation();
+    dropdown.style.display = dropdown.style.display === "flex" ? "none" : "flex";
+  });
+
+  // bezár, ha máshova kattintanak
+  document.addEventListener("click", function() {
+    dropdown.style.display = "none";
+  });
+});
+</script>
 
 <section id="rolunk" class="intro">
   <h2>Rólunk</h2>
-  <p>Több mint 20 éves tapasztalattal nyújtunk gyors, megbízható és szakszerű duguláselhárítást és vízvezeték szerelést Budapesten, Pest megyében és az ország egész területén. A Cleanwater General Kft. célja, hogy az ügyfelek ne csak egy egyszeri megoldást kapjanak, hanem hosszú távú, megelőzést is segítő szolgáltatást.</p>
-  <p>0-24 elérhető gyorsszervizünk garantálja, hogy vészhelyzet esetén azonnal reagálunk – hétvégén, ünnepnapokon is. Legyen szó családi házról, irodáról vagy ipari létesítményről, szakembereink minden típusú vízvezeték-hálózatot jól ismernek, és modern eszközparkkal dolgoznak.</p>
-  <p>Kiemelten figyelünk arra, hogy munkánkat ne csak gyorsan, hanem tisztán és precízen végezzük. Minden elvégzett munkánkra garanciát vállalunk, és részletes tanácsadással segítjük ügyfeleinket a jövőbeli problémák megelőzésében.</p>
-  <p>Legfőbb értékeink: megbízhatóság, szakértelem és ügyfélközpontúság. Az Ön elégedettsége a mi sikerünk.</p>
-
+  <p>Több mint 20 éves tapasztalattal nyújtunk gyors, megbízható és szakszerű <strong>duguláselhárítás</strong> és vízvezeték szerelést Budapesten, Pest megyében és országosan. A Cleanwater General Kft. célja, hogy ügyfeleink mindig professzionális <strong>duguláselhárítás</strong> megoldást kapjanak.</p>
+  <p>0-24 elérhető gyorsszervizünk garantálja, hogy <strong>duguláselhárítás</strong> vészhelyzet esetén azonnal reagálunk – hétvégén, ünnepnapokon is.</p>
+  <p>Kiemelten figyelünk arra, hogy <strong>duguláselhárítás</strong> közben munkánkat gyorsan, tisztán és precízen végezzük. Minden munkára garanciát vállalunk.</p>
 </section>
 
 <section id="szolgaltatasok" class="services">
   <h2>Szolgáltatásaink</h2>
   <div class="service-flex">
     <div class="service-item">
-      <img src="service.webp" alt="Duguláselhárítás gyorsan">
+      <img src="service.webp" alt="Duguláselhárítás gyorsan" loading="lazy" width="300" height="200">
       <h3>Duguláselhárítás</h3>
-      <p>Gyors és szakszerű duguláselhárítás lakossági és ipari ügyfeleknek.</p>
+      <p>Gyors és szakszerű <strong>duguláselhárítás</strong> lakossági és ipari ügyfeleknek.</p>
     </div>
     <div class="service-item">
-      <img src="plumbing-bathroom.jpg" alt="Vízvezeték szerelés">
+      <img src="plumbing-bathroom.webp" alt="Vízvezeték szerelés" loading="lazy" width="300" height="200">
       <h3>Vízvezeték szerelés</h3>
-      <p>Csapok, csövek, vízórák szakszerű javítása és cseréje.</p>
+      <p>Csapok, csövek, vízórák szakszerű javítása és cseréje <strong>duguláselhárítás</strong> közben is.</p>
     </div>
     <div class="service-item">
-      <img src="kitchen-plumbing.jpg" alt="WC és mosogató szerelés">
+      <img src="kitchen-plumbing.webp" alt="WC és mosogató szerelés" loading="lazy" width="300" height="200">
       <h3>WC és mosogató javítás</h3>
-      <p>Minden lakásban előforduló vízvezeték-problémát gyorsan megoldunk.</p>
+      <p>Minden vízvezeték-problémát gyorsan megoldunk – ha kell, <strong>duguláselhárítással</strong> együtt.</p>
     </div>
     <div class="service-item">
-      <img src="tools.webp" alt="Csatorna tisztítás">
+      <img src="tools.webp" alt="Csatorna tisztítás" loading="lazy" width="300" height="200">
       <h3>Csatorna tisztítás</h3>
-      <p>Teljes csatornarendszer takarítása és karbantartása.</p>
+      <p>Teljes csatornarendszer tisztítása, karbantartása és <strong>duguláselhárítása</strong>.</p>
     </div>
     <div class="service-item">
-      <img src="outdoor.jpg" alt="Vízóra csere">
+      <img src="outdoor.webp" alt="Vízóra csere" loading="lazy" width="300" height="200">
       <h3>Vízóra csere</h3>
-      <p>Vízóra cseréje, hitelesítése, gyors és precíz munkavégzés.</p>
+      <p>Vízóra cseréje és hitelesítése – szükség esetén <strong>duguláselhárítással</strong> kombinálva.</p>
     </div>
     <div class="service-item">
-      <img src="bathroom.webp" alt="Csőgörényezés">
+      <img src="bathroom.webp" alt="Csőgörényezés" loading="lazy" width="300" height="200">
       <h3>Csőgörényezés</h3>
-      <p>Professzionális csőgörényezés minden típusú csatornához.</p>
+      <p>Professzionális csőgörényezés, ami a <strong>duguláselhárítás</strong> egyik leghatékonyabb módszere.</p>
     </div>
     <div class="service-item">
-      <img src="engineer.png" alt="Kamerás csatornavizsgálat">
+      <img src="engineer.webp" alt="Kamerás csatornavizsgálat" loading="lazy" width="300" height="200">
       <h3>Kamerás vizsgálat</h3>
-      <p>Csatornák és vízvezetékek belső állapotának precíz ellenőrzése kamerával.</p>
+      <p>Csatornák belső állapotának ellenőrzése – gyakran <strong>duguláselhárítás</strong> előtt.</p>
     </div>
     <div class="service-item">
-      <img src="logó.jpeg" alt="Egyéb vízszerelési munkák">
+      <img src="logo.webp" alt="Egyéb vízszerelési munkák" loading="lazy" width="300" height="200">
       <h3>Egyéb vízszerelési munkák</h3>
-      <p>Minden egyéb lakásban vagy ipari létesítményben felmerülő vízszerelési feladat.</p>
+      <p>Minden egyéb vízszerelési feladat, ahol a <strong>duguláselhárítás</strong> is szerepet kaphat.</p>
     </div>
   </div>
 </section>
@@ -262,12 +395,13 @@ footer { text-align:center; padding:2em 1em; background-color:#222; color:#ccc; 
       <div class="price">Egyedi árajánlat</div>
     </div>
   </div>
+  <p style="text-align:center; margin-top:1em; font-weight:bold;">Áraink bruttó árak, rejtett költségek nélkül – minden <strong>duguláselhárítás</strong> munkára garancia!</p>
 </section>
 
 <section id="kapcsolat">
   <h2>Kapcsolat</h2>
   <p style="text-align:center; max-width:800px; margin:auto; font-size:1.15em;">
-    Vegye fel velünk a kapcsolatot az alábbi elérhetőségeken! Éjjel-nappal hívhat minket, vagy írjon e-mailt, és azonnal válaszolunk.
+    Vegye fel velünk a kapcsolatot éjjel-nappal, ha sürgős <strong>duguláselhárítás</strong> vagy vízvezeték szerelés szükséges. Hívjon minket, vagy írjon e-mailt, és azonnal válaszolunk!
   </p>
   <div class="buttons" style="margin-top:2em;">
     <a href="tel:+36304422112" class="call-btn">📞 Hívás: +36 30 44 22 112</a>
@@ -287,10 +421,5 @@ footer { text-align:center; padding:2em 1em; background-color:#222; color:#ccc; 
 
 </body>
 </html>
-
-
-
-
-
 
 
