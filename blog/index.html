@@ -1,40 +1,17 @@
 <!DOCTYPE html>
 <html lang="hu">
 <head>
-  <!-- Google Tag Manager -->
-  <script>
-    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-MZG8T6FR');
-  </script>
-  <script>
-  var ahrefs_analytics_script = document.createElement('script');
-  ahrefs_analytics_script.async = true;
-  ahrefs_analytics_script.src = 'https://analytics.ahrefs.com/analytics.js';
-  ahrefs_analytics_script.setAttribute('data-key', 'NtJw/Lr4PkiOXuIUQbwjeQ');
-  document.getElementsByTagName('head')[0].appendChild(ahrefs_analytics_script);
-</script>
-  <!-- End Google Tag Manager -->
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Duguláselhárítás 0‑24 Budapesten és Országosan | Cleanwater General Kft.</title>
   
-  <!-- Meta SEO -->
-  <meta name="description" content="Gyors és szakszerű duguláselhárítás Budapesten és az ország egész területén, 0‑24 elérhetőséggel. Vízvezeték szerelő több mint 20 év tapasztalattal. Budapesten és Pest megyén belül 60 percen belüli kiszállás. Hívjon most!">
+  <title>Dugulásmester Blog</title>
+  <meta name="description" content="Vicces és szellemes történetek a hétköznapi dugulásokról a Dugulásmester Blogon.">
   <meta name="robots" content="index, follow">
-  <meta name="author" content="Cleanwater General Kft.">
-  <meta name="keywords" content="duguláselhárítás, vízvezeték szerelés, 0‑24 dugulás, gyorsszerviz, csatorna tisztítás, kamerás vizsgálat, vízóra csere, csőgörényezés, Budapest, Pest megye">
-  <link rel="canonical" href="https://gyors-dugulaselharitas.hu">
 
   <!-- Open Graph / Social Share -->
-  <meta property="og:title" content="Duguláselhárítás 0‑24 Budapesten és Országosan | Cleanwater General Kft.">
-  <meta property="og:description" content="Gyors és szakszerű duguláselhárítás Budapesten és országosan. Hívjon most!">
-  <meta property="og:image" content="https://gyors-dugulaselharitas.hu/tools.webp">
-  <meta property="og:url" content="https://gyors-dugulaselharitas.hu">
+  <meta property="og:title" content="Dugulásmester Blog">
+  <meta property="og:description" content="Vicces és szellemes történetek a hétköznapi dugulásokról.">
+  <meta property="og:image" content="tools.webp">
   <meta property="og:type" content="website">
 
   <!-- Faviconok -->
@@ -43,120 +20,55 @@
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 
-  <!-- Strukturált adat (JSON-LD) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Cleanwater General Kft.",
-    "description": "Duguláselhárítás 0‑24 Budapesten és Országosan. Vízvezeték szerelés több mint 20 év tapasztalattal.",
-    "url": "https://gyors-dugulaselharitas.hu",
-    "telephone": "+36304422112",
-    "email": "laci.cleanwater@gmail.com",
-    "address": {
-      "@type": "PostalAddress",
-      "addressCountry": "HU",
-      "addressLocality": "Budapest"
-    },
-    "openingHours": "Mo‑Su 00:00‑23:59",
-    "image": "https://gyors-dugulaselharitas.hu/tools.webp",
-    "sameAs": []
-  }
-  </script>
+  <style>
+    body, html { margin:0; padding:0; font-family: Arial, sans-serif; color:#333; scroll-behavior: smooth; }
+    header { position: relative; text-align: center; color: white; padding: 5em 1em;
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('tools.webp') no-repeat center center/cover; }
+    header h1 { font-size: 2.8em; color:#00d4ff; margin: 0.2em 0; animation: fadeInDown 1s ease-out; }
+    header p { font-size:1.2em; margin:0; animation: fadeInUp 1s ease-out; }
 
-  <!-- Google tag (gtag.js) - Google Ads -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17092436986"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'AW-17092436986');
+    .buttons { margin-top: 2em; display:flex; justify-content:center; gap:1em; flex-wrap: wrap; }
+    .buttons a { text-decoration:none; padding:1em 2em; border-radius:10px; font-weight:bold; color:white;
+      transition: transform 0.3s, box-shadow 0.3s; box-shadow: 0 6px 12px rgba(0,0,0,0.2); font-size:1.1em; }
+    .buttons a:hover { transform: translateY(-5px); box-shadow:0 12px 20px rgba(0,0,0,0.35); }
+    .call-btn { background-color: #28a745; }
+    .email-btn { background-color: #FF5722; }
 
-    // Konverziókövető függvények
-    function hivasKonverzio() {
-      gtag('event', 'conversion', { 'send_to': 'AW-17092436986/telefon' });
+    .floating-buttons { position: fixed; bottom: 20px; right: 20px; display: flex; flex-direction: column; gap: 10px; z-index: 9999; }
+    .floating-buttons a { text-decoration:none; padding:0.8em 1.5em; border-radius:50px; font-weight:bold; color:white;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.2); transition: transform 0.3s; font-size:1em; }
+    .floating-buttons a:hover { transform: scale(1.05); }
+
+    nav { position: sticky; top:0; background: rgba(0,0,0,0.7); display: flex; justify-content: center; gap: 1em;
+      padding:0.8em 0; z-index: 10; flex-wrap: wrap; }
+    nav a { text-decoration:none; color:white; padding:0.5em 1em; border-radius:8px; transition: background 0.3s; }
+    nav a:hover { background: rgba(0,0,0,0.9); }
+
+    section { padding:5em 1em; max-width:1200px; margin:auto; position: relative; }
+    section h2 { color:#00d4ff; margin-bottom:1em; text-align:center; font-size:2em; position:relative; }
+    section h2::after { content:''; display:block; width:80px; height:4px; background:#00d4ff; margin:0.5em auto 0; border-radius:2px; }
+
+    .intro p { text-align:center; max-width:850px; margin:auto; font-size:1.15em; animation: fadeIn 1s ease-in; }
+    .services .service-item { margin-bottom:3em; text-align:center; }
+    .services .service-item h3 { font-size:1.8em; color:#00d4ff; margin-bottom:0.5em; }
+    .service-flex { display:flex; justify-content:center; gap:2em; flex-wrap:wrap; margin-top:1em; }
+    .service-flex img { max-width:300px; border-radius:12px; box-shadow: 0 6px 15px rgba(0,0,0,0.1); object-fit:cover; height:200px; width:300px; }
+
+    .price-list { display:grid; grid-template-columns: repeat(auto-fill,minmax(300px,1fr)); gap:20px; text-align:center; }
+    .price-item { padding:20px; border-radius:10px; background-color:#fff; box-shadow:0 6px 15px rgba(0,0,0,0.1); transition: transform 0.3s; }
+    .price-item:hover { transform: translateY(-5px); box-shadow:0 12px 20px rgba(0,0,0,0.2); }
+    .price-item h3 { font-size:1.5em; color:#00d4ff; margin-bottom:0.5em; }
+    .price-item p { font-size:1.1em; color:#444; margin:0.3em 0; }
+    .price-item .price { font-size:1.5em; font-weight:bold; color:#00d4ff; }
+
+    footer { text-align:center; padding:2em 1em; background-color:#222; color:#ccc; font-size:0.9em; }
+
+    @media(max-width:600px){
+      .floating-buttons { right: 10px; bottom: 10px; }
+      .floating-buttons a { padding:0.6em 1.2em; font-size:0.9em; }
+      .back-button { display: block; width: 80%; margin: 0 auto 1.5em auto; text-align: center; }
     }
-    function emailKonverzio() {
-      gtag('event', 'conversion', { 'send_to': 'AW-17092436986/email' });
-    }
-  </script>
-
-<style>
-body, html { margin:0; padding:0; font-family: Arial, sans-serif; color:#333; scroll-behavior: smooth; }
-header { position: relative; text-align: center; color: white; padding: 5em 1em;
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('tools.webp') no-repeat center center/cover; }
-header h1 { font-size: 2.8em; color:#00d4ff; margin: 0.2em 0; animation: fadeInDown 1s ease-out; }
-header p { font-size:1.2em; margin:0; animation: fadeInUp 1s ease-out; }
-
-.buttons { margin-top: 2em; display:flex; justify-content:center; gap:1em; flex-wrap: wrap; }
-.buttons a {
-  text-decoration:none; padding:1em 2em; border-radius:10px; font-weight:bold; color:white;
-  transition: transform 0.3s, box-shadow 0.3s; box-shadow: 0 6px 12px rgba(0,0,0,0.2); font-size:1.1em;
-}
-.buttons a:hover { transform: translateY(-5px); box-shadow:0 12px 20px rgba(0,0,0,0.35); }
-.call-btn { background-color: #28a745; }
-.email-btn { background-color: #FF5722; }
-
-/* FIXÁLT GOMBOK */
-.floating-buttons {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  z-index: 9999;
-}
-.floating-buttons a {
-  text-decoration:none;
-  padding:0.8em 1.5em;
-  border-radius:50px;
-  font-weight:bold;
-  color:white;
-  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
-  transition: transform 0.3s;
-  font-size:1em;
-}
-.floating-buttons a:hover { transform: scale(1.05); }
-
-nav { position: sticky; top:0; background: rgba(0,0,0,0.7); display: flex; justify-content: center; gap: 1em;
-  padding:0.8em 0; z-index: 10; flex-wrap: wrap; }
-nav a { text-decoration:none; color:white; padding:0.5em 1em; border-radius:8px; transition: background 0.3s; }
-nav a:hover { background: rgba(0,0,0,0.9); }
-
-section { padding:5em 1em; max-width:1200px; margin:auto; position: relative; }
-section h2 { color:#00d4ff; margin-bottom:1em; text-align:center; font-size:2em; position:relative; }
-section h2::after { content:''; display:block; width:80px; height:4px; background:#00d4ff; margin:0.5em auto 0; border-radius:2px; }
-
-.intro p { text-align:center; max-width:850px; margin:auto; font-size:1.15em; animation: fadeIn 1s ease-in; }
-.services .service-item { margin-bottom:3em; text-align:center; }
-.services .service-item h3 { font-size:1.8em; color:#00d4ff; margin-bottom:0.5em; }
-.service-flex { display:flex; justify-content:center; gap:2em; flex-wrap:wrap; margin-top:1em; }
-.service-flex img { max-width:300px; border-radius:12px; box-shadow: 0 6px 15px rgba(0,0,0,0.1); object-fit:cover; height:200px; width:300px; }
-
-.price-list { display:grid; grid-template-columns: repeat(auto-fill,minmax(300px,1fr)); gap:20px; text-align:center; }
-.price-item { padding:20px; border-radius:10px; background-color:#fff; box-shadow:0 6px 15px rgba(0,0,0,0.1); transition: transform 0.3s; }
-.price-item:hover { transform: translateY(-5px); box-shadow:0 12px 20px rgba(0,0,0,0.2); }
-.price-item h3 { font-size:1.5em; color:#00d4ff; margin-bottom:0.5em; }
-.price-item p { font-size:1.1em; color:#444; margin:0.3em 0; }
-.price-item .price { font-size:1.5em; font-weight:bold; color:#00d4ff; }
-
-footer { text-align:center; padding:2em 1em; background-color:#222; color:#ccc; font-size:0.9em; }
-
-@media(max-width:600px){
-  .floating-buttons { right: 10px; bottom: 10px; }
-  .floating-buttons a { padding:0.6em 1.2em; font-size:0.9em; }
-}
-/* Mobilbarát középre igazítás */
-@media (max-width: 600px) {
-    .back-button {
-        display: block;
-        width: 80%;
-        margin: 0 auto 1.5em auto;
-        text-align: center;
-    }
-}
-</style>
+  </style>
 </head>
 <body>
 
