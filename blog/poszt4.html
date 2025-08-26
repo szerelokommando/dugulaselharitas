@@ -1,47 +1,339 @@
 <!DOCTYPE html>
 <html lang="hu">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>A csatorna rejtélye</title>
+  <!-- Google Tag Manager -->
+  <script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MZG8T6FR');
+  </script>
+  <script>
+  var ahrefs_analytics_script = document.createElement('script');
+  ahrefs_analytics_script.async = true;
+  ahrefs_analytics_script.src = 'https://analytics.ahrefs.com/analytics.js';
+  ahrefs_analytics_script.setAttribute('data-key', 'NtJw/Lr4PkiOXuIUQbwjeQ');
+  document.getElementsByTagName('head')[0].appendChild(ahrefs_analytics_script);
+</script>
+  <!-- End Google Tag Manager -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Rövidebb, fókuszált Title -->
+  <title>Duguláselhárítás Blog | Cleanwater General</title>
+  
+  <!-- Meta SEO -->
+  <meta name="description" content="Beszámoló arról ,mi fán terem a duguláselhárító !">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://gyors-dugulaselharitas.hu">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Duguláselhárítás Blog | Cleanwater General">
+  <meta property="og:description" content="Duguláselhárítási Blog azoknak,akiket érdekelhet egy-két vicces sztori!">
+  <meta property="og:image" content="https://gyors-dugulaselharitas.hu/tools.webp">
+  <meta property="og:url" content="https://gyors-dugulaselharitas.hu">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Duguláselhárítás Blog| Cleanwater General">
+  <meta name="twitter:description" content="Gyors duguláselhárítás Budapesten 0-24. Fix árak, garancia, 60 perc alatt kiszállás. Hívjon most!">
+  <meta name="twitter:image" content="https://gyors-dugulaselharitas.hu/tools.webp">
+
+  <!-- Faviconok -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+  <!-- Strukturált adat (JSON-LD) pontosítva -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Plumber",
+    "name": "Cleanwater General Kft.",
+    "description": "Duguláselhárítás és vízvezeték szerelés 0-24 Budapesten és országosan. 20+ év tapasztalat.",
+    "url": "https://gyors-dugulaselharitas.hu",
+    "telephone": "+36304422112",
+    "email": "laci.cleanwater@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "HU",
+      "addressLocality": "Monorierdő",
+      "postalCode": "2213",
+      "streetAddress":  "Erdei út 36."
+    },
+    "openingHours": "Mo-Su 00:00-23:59",
+    "image": "https://gyors-dugulaselharitas.hu/tools.webp",
+    "sameAs": [
+      "https://www.facebook.com/gyorsdugulaselharitas",
+      "https://maps.google.com/?cid=123456789"
+    ]
+  }
+  </script>
+
+  <!-- Google tag (gtag.js) - Google Ads -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17092436986"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-17092436986');
+
+    function hivasKonverzio() {
+      gtag('event', 'conversion', { 'send_to': 'AW-17092436986/telefon' });
+    }
+    function emailKonverzio() {
+      gtag('event', 'conversion', { 'send_to': 'AW-17092436986/email' });
+    }
+
+    // GA4 call_click esemény
+    document.addEventListener("DOMContentLoaded", function() {
+      document.querySelectorAll('a[href^="tel:"]').forEach(el=>{
+        el.addEventListener('click', ()=> gtag('event','call_click',{event_category:'CTA'}));
+      });
+    });
+  </script>
+
+  <!-- Hero kép preload -->
+  <link rel="preload" as="image" href="tools.webp">
+
 <style>
-/* ugyanaz a stílus mint az előző */
 body, html { margin:0; padding:0; font-family: Arial, sans-serif; color:#333; scroll-behavior: smooth; }
-header { position: relative; text-align: center; color: white; padding: 5em 1em; background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('tools.webp') no-repeat center center/cover; }
-header h1 { font-size: 2.8em; color:#00d4ff; margin: 0.2em 0; }
-header p { font-size:1.2em; margin:0; }
-.main-nav { position: sticky; top: 0; background: rgba(0,0,0,0.85); z-index: 1000; }
-.main-nav ul { list-style: none; margin: 0; padding: 0.8em 0; display: flex; justify-content: center; gap: 1em; flex-wrap: wrap; }
-.main-nav ul li a { text-decoration: none; color: white; padding: 0.5em 1em; border-radius: 8px; transition: background 0.3s; }
-.main-nav ul li a:hover { background: rgba(0,0,0,0.95); }
-section.blog-content { padding: 3em 1em; max-width: 900px; margin:auto; }
-section.blog-content h2 { color:#00d4ff; text-align:center; margin-bottom:1em; }
-section.blog-content p { font-size:1.1em; line-height:1.6em; margin-bottom:1em; }
+header { position: relative; text-align: center; color: white; padding: 5em 1em;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('tools.webp') no-repeat center center/cover; }
+header h1 { font-size: 2.8em; color:#00d4ff; margin: 0.2em 0; animation: fadeInDown 1s ease-out; }
+header p { font-size:1.2em; margin:0; animation: fadeInUp 1s ease-out; }
+
+.buttons { margin-top: 2em; display:flex; justify-content:center; gap:1em; flex-wrap: wrap; }
+.buttons a {
+  text-decoration:none; padding:1em 2em; border-radius:10px; font-weight:bold; color:white;
+  transition: transform 0.3s, box-shadow 0.3s; box-shadow: 0 6px 12px rgba(0,0,0,0.2); font-size:1.1em;
+}
+.buttons a:hover { transform: translateY(-5px); box-shadow:0 12px 20px rgba(0,0,0,0.35); }
+.call-btn { background-color: #28a745; }
+.email-btn { background-color: #FF5722; }
+
+/* FIXÁLT GOMBOK */
+.floating-buttons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 9999;
+}
+.floating-buttons a {
+  text-decoration:none;
+  padding:0.8em 1.5em;
+  border-radius:50px;
+  font-weight:bold;
+  color:white;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+  font-size:1em;
+}
+.floating-buttons a:hover { transform: scale(1.05); }
+
+nav { position: sticky; top:0; background: rgba(0,0,0,0.7); display: flex; justify-content: center; gap: 1em;
+  padding:0.8em 0; z-index: 10; flex-wrap: wrap; }
+nav a { text-decoration:none; color:white; padding:0.5em 1em; border-radius:8px; transition: background 0.3s; }
+nav a:hover { background: rgba(0,0,0,0.9); }
+
+section { padding:5em 1em; max-width:1200px; margin:auto; position: relative; }
+section h2 { color:#00d4ff; margin-bottom:1em; text-align:center; font-size:2em; position:relative; }
+section h2::after { content:''; display:block; width:80px; height:4px; background:#00d4ff; margin:0.5em auto 0; border-radius:2px; }
+
+.intro p { text-align:center; max-width:850px; margin:auto; font-size:1.15em; animation: fadeIn 1s ease-in; }
+.services .service-item { margin-bottom:3em; text-align:center; }
+.services .service-item h3 { font-size:1.8em; color:#00d4ff; margin-bottom:0.5em; }
+.service-flex { display:flex; justify-content:center; gap:2em; flex-wrap:wrap; margin-top:1em; }
+.service-flex img { max-width:300px; border-radius:12px; box-shadow: 0 6px 15px rgba(0,0,0,0.1); object-fit:cover; height:200px; width:300px; }
+
+.price-list { display:grid; grid-template-columns: repeat(auto-fill,minmax(300px,1fr)); gap:20px; text-align:center; }
+.price-item { padding:20px; border-radius:10px; background-color:#fff; box-shadow:0 6px 15px rgba(0,0,0,0.1); transition: transform 0.3s; }
+.price-item:hover { transform: translateY(-5px); box-shadow:0 12px 20px rgba(0,0,0,0.2); }
+.price-item h3 { font-size:1.5em; color:#00d4ff; margin-bottom:0.5em; }
+.price-item p { font-size:1.1em; color:#444; margin:0.3em 0; }
+.price-item .price { font-size:1.5em; font-weight:bold; color:#00d4ff; }
+
 footer { text-align:center; padding:2em 1em; background-color:#222; color:#ccc; font-size:0.9em; }
+
+@media(max-width:600px){
+  .floating-buttons { right: 10px; bottom: 10px; }
+  .floating-buttons a { padding:0.6em 1.2em; font-size:0.9em; }
+}
 </style>
-</head>
+
 <body>
+
 <header>
-  <h1>Duguláselhárítás a hétköznapokban</h1>
-  <p>Vicces történetek és tippek, hogy a cső ne legyen gond</p>
+  <h1>Duguláselhárítási Blogom:6 Hihetetlen Csatornatitok, Amitől Soha Többé Nem Fogsz Negyedóra Hosszat Ázni a Dugulásnál!</h1>
+  <p>csatorna nem csupán vízlevezető rendszer – ez egy titkos világ, tele kanyarokkal, rejtett zugokkal és meglepetésekkel, ahol a víz, a szennyeződés és a humor együtt játszanak. Minden dugulás egy új rejtély, és minden sikeres duguláselhárítás egy kis diadal. Ha valaha is gondoltad, hogy a csöveid önálló életet élnek, itt az ideje, hogy megtudd az igazságot!</p>
+  <p style="font-weight:bold; color:#00d4ff; margin-top:1em;">
+    ✅ Most elérhető – átlagos kiszállás 60 percen belül Budapesten!
+  </p>
+  <div class="buttons">
+    <a href="tel:+36304422112" class="call-btn">📞 Hívás: +36 30 44 22 112</a>
+    <a href="mailto:laci.cleanwater@gmail.com" class="email-btn">✉️ E-mail: laci.cleanwater@gmail.com</a>
+  </div>
 </header>
-<nav class="main-nav">
-  <ul>
-    <li><a href="../index.html">Főoldal</a></li>
-    <li><a href="poszt1.html">A konyhai kaland</a></li>
-    <li><a href="poszt2.html">A fürdőszoba titkos élete</a></li>
-    <li><a href="poszt3.html">Mosogató-mese</a></li>
-    <li><a href="poszt4.html">A csatorna rejtélye</a></li>
-  </ul>
+
+<nav>
+  <a href="https://gyors-dugulaselharitas.hu/#rolunk">Rólunk</a>
+  <a href="https://gyors-dugulaselharitas.hu/#szolgaltatasok">Szolgáltatások</a>
+  <a href="https://gyors-dugulaselharitas.hu/#arlista">Árlista</a>
+  <a href="#kapcsolat">Kapcsolat</a>
+  <a href="https://gyors-dugulaselharitas.hu/blog/index.html">Blog</a>
+
+  <!-- Kerületek legördülő -->
+  <div class="dropdown">
+    <button class="dropbtn">Kerületek ▼</button>
+    <div class="dropdown-content">
+      <a href="https://gyors-dugulaselharitas.hu/#rolunk">Vissza a Főoldalra</a>
+        </div>
 </nav>
-<section class="blog-content">
-  <h2>A csatorna rejtélye</h2>
-  <p>A csatorna nem csupán vízlevezető, hanem egy egész világ: titkos kanyarok, rejtett kis szűk helyek, ahol a víz és a szennyeződés játszik. Minden dugulás egy új rejtély, és minden megoldás egy kis diadal.</p>
-  <p>Tippek: nézz körül, figyelj a jelekre, és ne félj a humoros megoldásoktól – a csatorna is szeret nevetni!</p>
-</section>
-<footer>
-  &copy; 2025 Dugulásmester Blog
+
+<style>
+nav {
+  display: flex;
+  gap: 20px;
+  background: #333;
+  padding: 10px;
+}
+
+nav a, .dropbtn {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font: inherit;
+}
+
+nav a:hover, .dropbtn:hover {
+  background: #555;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  flex-direction: column;
+  background: #444;
+  max-height: 200px; /* kb. 6 elem látszik */
+  overflow-y: auto; /* görgethető */
+  width: 180px;
+  z-index: 1000;
+}
+
+.dropdown-content a {
+  padding: 8px 12px;
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background: #666;
+}
+
+/* Scrollbar stílus (szebb, mint a default) */
+.dropdown-content::-webkit-scrollbar {
+  width: 8px;
+}
+.dropdown-content::-webkit-scrollbar-track {
+  background: #333;
+}
+.dropdown-content::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+.dropdown-content::-webkit-scrollbar-thumb:hover {
+  background: #aaa;
+}
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const btn = document.querySelector(".dropbtn");
+  const dropdown = document.querySelector(".dropdown-content");
+
+  btn.addEventListener("click", function(e) {
+    e.stopPropagation();
+    dropdown.style.display = dropdown.style.display === "flex" ? "none" : "flex";
+  });
+
+  // bezár, ha máshova kattintanak
+  document.addEventListener("click", function() {
+    dropdown.style.display = "none";
+  });
+});
+</script>
+
+<section id="Blog Főoldal" class="intro">
+  
+<section id="kapcsolat">
+  <h2>. Miért nem hanyagolhatod el a csatornatisztítást?</h2>
+  <p style="text-align:center; max-width:800px; margin:auto; font-size:1.15em;">
+    A rendszeres <strong>csatornatisztítás</strong> nem csak higiéniai kérdés. A lerakódott zsír, haj és ételmaradék miatt kialakuló dugulások kellemetlen szagokat, lassú lefolyást és akár csőtörést is okozhatnak. Egy tiszta csatorna nemcsak esztétikus, de hosszú távon pénzt is spórol. Ha szeretnéd elkerülni a drága <strong>duguláselhárítás</strong> költségeket, a megelőzés a kulcs!</p>
+ 
+  <h2>2. Dugulás megelőzése egyszerű tippekkel</h2> <ul> <li>Ne önts bele nagy mennyiségű zsírt vagy olajat, mert ezek gyorsan lerakódnak.</li> <li>Rendszeresen alkalmazz csatornatisztító szerek vagy természetes alternatívákat, például szódabikarbónát és ecetet.</li> <li>Figyeld a <strong>lefolyó</strong> hangját és sebességét: minden lassú vagy furcsa zaj figyelmeztetés lehet.</li> <li>Használj szűrőt, hogy haj, ételmaradék vagy apró tárgyak ne jussanak a csőbe.</li> </ul> <h2>3. Csatorna kalandok, amik megnevettetnek</h2> <p><strong>A teknős utazása:</strong> Egy ügyfél lassú WC-lefolyás miatt hívott. A kamera felfedte a csőben rekedt apró műanyag teknőst. Elsőre döbbentek voltunk, de végül mindketten nevettünk. Egy <strong>humoros dugulás</strong> mindig jobb, mint egy komoly problémás cső.</p> <p><strong>A kábel csapdája:</strong> Egy konyhai lefolyó teljesen eldugult. Kiderült, hogy egy régi USB-kábel okozta a bajt. Miután a dugulást megszüntettük, a víz szabadon folyt, és az ügyfél elképedve, de nevetve fogadta a megoldást.</p> <p><strong>A szappanbuborék-háború:</strong> Egy fürdőszobai dugulás során a víz habzott, mint egy szappanos tenger. Szappan és olajmaradványok keveredtek, és buborékhegyek alakultak ki. A <strong>csatorna</strong> néha szeret játszani, és a duguláselhárítás is lehet szórakoztató élmény.</p> <p><strong>A cső-labirintus:</strong> Egy régi házban a csövek labirintusszerűen kanyarogtak. Végül speciális eszközzel sikerült felderíteni a teljes rendszert, és a víz újra szabadon folyt. Ez is bizonyítja, hogy a csatorna egy rejtélyes világ, ahol minden kanyar új meglepetést tartogat.</p> <h2>4. Humor és kreatív megoldások a dugulásban</h2> <p>A duguláselhárítás néha komoly kihívás, de a humor mindig segít átvészelni a nehéz helyzeteket. Egy jókedvű mosoly többet ér, mint a legdrágább szerszám. Ha kreatívan állsz hozzá, még a legmakacsabb dugulás is könnyebben oldódik meg.</p> <h2>5. Csatorna titkok: amit a profi szakemberek is tudnak</h2> <ul> <li>Rendszeres csatornatisztítás = hosszú élettartam a csöveknek.</li> <li>A dugulás gyakran a legváratlanabb tárgyaktól jön létre: játékok, hajgumik, ételek.</li> <li>Az időben történő <strong>duguláselhárítás</strong> megelőzi a komolyabb problémákat és a kellemetlen szagokat.</li> <li>A csatornák néha humoros kalandokat tartogatnak, érdemes nyitott szemmel és mosollyal kezelni őket.</li> </ul> <h2>6. Összegzés – a csatorna világa, ahol a víz és a humor találkozik</h2> <p>A csatorna rejtelmei izgalmas világot rejtenek. Minden dugulás egy új történet, minden sikeres <strong>duguláselhárítás</strong> pedig egy kis diadal. Ha követed a tippeket, rendszeresen tisztítod a csatornát, figyelsz a jelekre és nem félsz a kreatív megoldásoktól, akkor a cső mindig szabadon engedi a vizet, és még egy kis mosolyt is hoz a mindennapokba.</p> <p>Ne feledd: a <strong>csatorna</strong> nem csak vezető cső a víznek, hanem egy rejtett, izgalmas világ, ahol minden dugulás egy új történetet mesél el. Ha legközelebb lassan folyik a víz, gondolj arra, hogy talán egy új humoros kaland kezdete!</p>
+  
+  
+  
+  
+  
+  <div class="buttons" style="margin-top:2em;">
+    <a href="tel:+36304422112" class="call-btn">📞 Hívás: +36 30 44 22 112</a>
+    <a href="mailto:laci.cleanwater@gmail.com" class="email-btn">✉️ E-mail: laci.cleanwater@gmail.com</a>
+ <footer>
+  <!-- Egyéb lábléc tartalom -->
+
+  <p>
+    Profi <a href="https://gyors-dugulaselharitas.hu" title="Duguláselhárítás Budapest">duguláselhárítás Budapesten</a> a Cleanwater General-től.
+  </p>
 </footer>
+ </div>
+</section>
+
+<footer>
+<footer>
+  <!-- Egyéb lábléc tartalom -->
+
+  <p>
+    Profi <a href="https://gyors-dugulaselharitas.hu" title="Duguláselhárítás Budapest">duguláselhárítás Budapesten</a> a Cleanwater General-től.
+  </p>
+</footer>
+
+
+  &copy; 2025 Cleanwater General Kft. | Duguláselhárítás és vízvezeték szerelés 0-24
+</footer>
+
+<!-- Fixen megjelenő gombok -->
+<div class="floating-buttons">
+  <a href="tel:+36304422112" class="call-btn">📞 Hívás</a>
+  <a href="mailto:laci.cleanwater@gmail.com" class="email-btn">✉️ E-mail</a>
+</div>
+<footer>
+  <!-- Egyéb lábléc tartalom -->
+
+  <p>
+    Profi <a href="https://gyors-dugulaselharitas.hu" title="Duguláselhárítás Budapest">duguláselhárítás Budapesten</a> a Cleanwater General-től.
+  </p>
+</footer>
+
+
 </body>
 </html>
+
 
