@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Szolgáltatás választó</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .container {
+      display: flex;
+      gap: 40px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .choice {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      text-align: center;
+      cursor: pointer;
+      width: 250px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      transition: transform 0.2s;
+      text-decoration: none;
+    }
+    .choice:hover {
+      transform: scale(1.05);
+    }
+    .choice img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+    .choice h2 {
+      margin: 10px;
+      font-size: 1.2rem;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a class="choice" href="https://gyors-dugulaselharitas.hu">
+      <img src="logó.webp" alt="Duguláselhárítás">
+      <h2>Duguláselhárítás</h2>
+    </a>
+    <a class="choice" href="kut-tisztitas.html">
+      <img src="logó.jpg" alt="Kút tisztítás">
+      <h2>Kút tisztítás</h2>
+    </a>
+  </div>
+</body>
+</html>
