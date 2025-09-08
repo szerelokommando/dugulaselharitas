@@ -193,119 +193,7 @@ footer { text-align:center; padding:2em 1em; background-color:#222; color:#ccc; 
   <a href="/kuttisztitas/kut-tisztitas.html">Kút tisztítás szolgáltatás</a>
 
 
-  <!-- Kerületek legördülő -->
-  <div class="dropdown">
-    <button class="dropbtn">Kerületek ▼</button>
-    <div class="dropdown-content">
-      <a href="budapest-i-kerulet.html">I. kerület</a>
-      <a href="budapest-ii-kerulet.html">II. kerület</a>
-      <a href="budapest-iii-kerulet.html">III. kerület</a>
-      <a href="budapest-iv-kerulet.html">IV. kerület</a>
-      <a href="budapest-v-kerulet.html">V. kerület</a>
-      <a href="budapest-vi-kerulet.html">VI. kerület</a>
-      <a href="budapest-vii-kerulet.html">VII. kerület</a>
-      <a href="budapest-viii-kerulet.html">VIII. kerület</a>
-      <a href="budapest-ix-kerulet.html">IX. kerület</a>
-      <a href="budapest-x-kerulet.html">X. kerület</a>
-      <a href="budapest-xi-kerulet.html">XI. kerület</a>
-      <a href="budapest-xii-kerulet.html">XII. kerület</a>
-      <a href="budapest-xiii-kerulet.html">XIII. kerület</a>
-      <a href="budapest-xiv-kerulet.html">XIV. kerület</a>
-      <a href="budapest-xv-kerulet.html">XV. kerület</a>
-      <a href="budapest-xvi-kerulet.html">XVI. kerület</a>
-      <a href="budapest-xvii-kerulet.html">XVII. kerület</a>
-      <a href="budapest-xviii-kerulet.html">XVIII. kerület</a>
-      <a href="budapest-xix-kerulet.html">XIX. kerület</a>
-      <a href="budapest-xx-kerulet.html">XX. kerület</a>
-      <a href="budapest-xxi-kerulet.html">XXI. kerület</a>
-      <a href="budapest-xxii-kerulet.html">XXII. kerület</a>
-      <a href="budapest-xxiii-kerulet.html">XXIII. kerület</a>
-    </div>
-  </div>
-</nav>
 
-<style>
-nav {
-  display: flex;
-  gap: 20px;
-  background: #333;
-  padding: 10px;
-}
-
-nav a, .dropbtn {
-  color: white;
-  text-decoration: none;
-  padding: 8px 12px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  font: inherit;
-}
-
-nav a:hover, .dropbtn:hover {
-  background: #555;
-}
-
-.dropdown {
-  position: relative;
-}
-
-.dropdown-content {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  display: none;
-  flex-direction: column;
-  background: #444;
-  max-height: 200px; /* kb. 6 elem látszik */
-  overflow-y: auto; /* görgethető */
-  width: 180px;
-  z-index: 1000;
-}
-
-.dropdown-content a {
-  padding: 8px 12px;
-  color: white;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {
-  background: #666;
-}
-
-/* Scrollbar stílus (szebb, mint a default) */
-.dropdown-content::-webkit-scrollbar {
-  width: 8px;
-}
-.dropdown-content::-webkit-scrollbar-track {
-  background: #333;
-}
-.dropdown-content::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 4px;
-}
-.dropdown-content::-webkit-scrollbar-thumb:hover {
-  background: #aaa;
-}
-</style>
-
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-  const btn = document.querySelector(".dropbtn");
-  const dropdown = document.querySelector(".dropdown-content");
-
-  btn.addEventListener("click", function(e) {
-    e.stopPropagation();
-    dropdown.style.display = dropdown.style.display === "flex" ? "none" : "flex";
-  });
-
-  // bezár, ha máshova kattintanak
-  document.addEventListener("click", function() {
-    dropdown.style.display = "none";
-  });
-});
-</script>
 
 <section id="rolunk" class="intro">
   <h2>Rólunk</h2>
@@ -431,6 +319,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 </body>
 </html>
+
 
 
 
