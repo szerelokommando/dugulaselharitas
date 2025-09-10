@@ -31,9 +31,109 @@
     <div class="container">
       <h1>Gyűrűskút Tisztítás</h1>
       <p>Professzionális tisztítás, fertőtlenítés és karbantartás</p>
-      <a href="#kapcsolat" class="btn">Ajánlatot kérek!</a>
-      <a href="https://www.gyors-dugulaselharitas.hu" class="btn">Főoldalunk</a>
-      <a href=#cleaning-steps" class ="btn">Kúttisztítás menete</a>
+  
+  <!-- Navigációs Menü (Szendvics menü) -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">
+        <a href="#">Cleanwater General</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#rolunk">Rólunk</a></li>
+        <li><a href="#introduction">Kút tisztítás</a></li>
+        <li><a href="#why-needed">Miért szükséges?</a></li>
+        <li><a href="#cleaning-steps">Kúttisztítás menete</a></li>
+        <li><a href="#advantages">Előnyök</a></li>
+        <li><a href="#common-problems">Problémák</a></li>
+        <li><a href="#kapcsolat">Kapcsolat</a></li>
+      </ul>
+      <div class="menu-icon" onclick="toggleMenu()">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Tartalom -->
+  <section id="rolunk">
+    <div class="container">
+      <h2>Rólunk</h2>
+      <p>Cégünk, a Cleanwater General Kft., több mint 10 éve foglalkozik gyűrűskutak szakszerű tisztításával és karbantartásával. Munkáinkat modern eszközökkel és környezetbarát technológiával végezzük, ügyfeleink teljes megelégedésére.</p>
+    </div>
+  </section>
+
+  <script>
+    // Menü Toggle (Mobil nézethez)
+    function toggleMenu() {
+      const navLinks = document.querySelector('.nav-links');
+      navLinks.classList.toggle('active');
+    }
+  </script>
+
+  <!-- Mobil menü CSS (ha szükséges) -->
+  <style>
+    .navbar {
+      background-color: #333;
+      padding: 10px;
+    }
+
+    .navbar .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-links {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .nav-links li {
+      display: inline-block;
+      margin: 0 15px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    .menu-icon {
+      display: none;
+      cursor: pointer;
+    }
+
+    .menu-icon .bar {
+      width: 25px;
+      height: 4px;
+      margin: 4px;
+      background-color: white;
+    }
+
+    /* Mobil nézethez */
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .menu-icon {
+        display: block;
+      }
+    }
+  </style>
     </div>
   </header>
 
