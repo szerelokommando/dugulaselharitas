@@ -32,27 +32,114 @@
       <h1>Gyűrűskút Tisztítás</h1>
       <p>Professzionális tisztítás, fertőtlenítés és karbantartás</p>
   
-  <!-- Navigációs Menü (Szendvics menü) -->
-  <nav class="navbar">
-    <div class="container">
-      <div class="logo">
-        <a href="#">Cleanwater General</a>
-      </div>
-      <ul class="nav-links">
-        <li><a href="#rolunk">Rólunk</a></li>
-        <li><a href="#introduction">Kút tisztítás</a></li>
-        <li><a href="#why-needed">Miért szükséges?</a></li>
-        <li><a href="#cleaning-steps">Kúttisztítás menete</a></li>
-        <li><a href="#advantages">Előnyök</a></li>
-        <li><a href="#common-problems">Problémák</a></li>
-        <li><a href="#kapcsolat">Kapcsolat</a></li>
-      </ul>
-      <div class="menu-icon" onclick="toggleMenu()">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </div>
-    </div>
+
+  <script>
+    // Menü Toggle (Mobil nézethez)
+    function toggleMenu() {
+      const navLinks = document.querySelector('.nav-links');
+      navLinks.classList.toggle('active');
+    }
+  </script>
+
+  <!-- Mobil menü CSS (ha szükséges) -->
+  <style>
+    /* Alap stílusok */
+    .navbar {
+      background-color: #333;
+      padding: 10px;
+    }
+
+    .navbar .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-links {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .nav-links li {
+      display: inline-block;
+      margin: 0 15px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    .menu-icon {
+      display: none;
+      cursor: pointer;
+    }
+
+    .menu-icon .bar {
+      width: 25px;
+      height: 4px;
+      margin: 4px;
+      background-color: white;
+    }
+
+    /* Mobil nézethez */
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .menu-icon {
+        display: block;
+      }
+    }
+
+    /* Vissza a tetejére gomb */
+    .back-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #333;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      font-size: 18px;
+    }
+  </style>
+
+  <!-- Vissza a tetejére gomb -->
+  <div class="back-to-top" onclick="scrollToTop()">↑</div>
+
+  <script>
+    // Scroll to Top
+    window.onscroll = function() {
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        document.querySelector('.back-to-top').style.display = 'block';
+      } else {
+        document.querySelector('.back-to-top').style.display = 'none';
+      }
+    };
+
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
+  </script>
   </nav>
 
   <!-- Tartalom -->
